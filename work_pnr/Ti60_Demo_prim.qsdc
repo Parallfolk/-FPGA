@@ -1,0 +1,930 @@
+clock {
+  name: "dsi_serclk_i"
+  period: 1333
+  rising_edge: 167
+  falling_edge: 833
+  target_pin {
+    cell: "dsi_serclk_i"
+    port: "INPAD"
+  }
+  origin: SDC
+  uncertainty {
+    value: 110
+    analysis: MAX
+  }
+  uncertainty {
+    value: 70
+    analysis: MIN
+  }
+}
+clock {
+  name: "dsi_txcclk_i"
+  period: 1333
+  rising_edge: 500
+  falling_edge: 1166
+  target_pin {
+    cell: "dsi_txcclk_i"
+    port: "INPAD"
+  }
+  origin: SDC
+  uncertainty {
+    value: 110
+    analysis: MAX
+  }
+  uncertainty {
+    value: 70
+    analysis: MIN
+  }
+}
+clock {
+  name: "dsi_byteclk_i"
+  period: 5332
+  target_pin {
+    cell: "dsi_byteclk_i"
+    port: "INPAD"
+  }
+  origin: SDC
+  uncertainty {
+    value: 110
+    analysis: MAX
+  }
+  uncertainty {
+    value: 70
+    analysis: MIN
+  }
+}
+clock {
+  name: "dsi_fb_i"
+  period: 32323
+  target_pin {
+    cell: "dsi_fb_i"
+    port: "INPAD"
+  }
+  origin: SDC
+  uncertainty {
+    value: 110
+    analysis: MAX
+  }
+  uncertainty {
+    value: 70
+    analysis: MIN
+  }
+}
+clock {
+  name: "hdmi_pixel_10x"
+  period: 1347
+  rising_edge: 337
+  falling_edge: 1010
+  target_pin {
+    cell: "hdmi_pixel_10x"
+    port: "INPAD"
+  }
+  origin: SDC
+  uncertainty {
+    value: 110
+    analysis: MAX
+  }
+  uncertainty {
+    value: 70
+    analysis: MIN
+  }
+}
+clock {
+  name: "hdmi_pixel"
+  period: 6734
+  target_pin {
+    cell: "hdmi_pixel"
+    port: "INPAD"
+  }
+  origin: SDC
+  uncertainty {
+    value: 110
+    analysis: MAX
+  }
+  uncertainty {
+    value: 70
+    analysis: MIN
+  }
+}
+clock {
+  name: "sensor_xclk_i"
+  period: 37037
+  target_pin {
+    cell: "sensor_xclk_i"
+    port: "INPAD"
+  }
+  origin: SDC
+  uncertainty {
+    value: 110
+    analysis: MAX
+  }
+  uncertainty {
+    value: 70
+    analysis: MIN
+  }
+}
+clock {
+  name: "sys_clk_i"
+  period: 8081
+  target_pin {
+    cell: "sys_clk_i"
+    port: "INPAD"
+  }
+  origin: SDC
+  uncertainty {
+    value: 110
+    analysis: MAX
+  }
+  uncertainty {
+    value: 70
+    analysis: MIN
+  }
+}
+clock {
+  name: "hbramClk"
+  period: 4040
+  target_pin {
+    cell: "hbramClk"
+    port: "INPAD"
+  }
+  origin: SDC
+  uncertainty {
+    value: 110
+    analysis: MAX
+  }
+  uncertainty {
+    value: 70
+    analysis: MIN
+  }
+}
+clock {
+  name: "hbramClk90"
+  period: 4040
+  rising_edge: 1010
+  falling_edge: 3030
+  target_pin {
+    cell: "hbramClk90"
+    port: "INPAD"
+  }
+  origin: SDC
+  uncertainty {
+    value: 110
+    analysis: MAX
+  }
+  uncertainty {
+    value: 70
+    analysis: MIN
+  }
+}
+clock {
+  name: "hbramClk_Cal"
+  period: 4040
+  target_pin {
+    cell: "hbramClk_Cal"
+    port: "INPAD"
+  }
+  origin: SDC
+  uncertainty {
+    value: 110
+    analysis: MAX
+  }
+  uncertainty {
+    value: 70
+    analysis: MIN
+  }
+}
+clock {
+  name: "csi_rxc_i"
+  period: 5000
+  target_pin {
+    cell: "csi_rxc_i"
+    port: "INPAD"
+  }
+  origin: SDC
+  uncertainty {
+    value: 110
+    analysis: MAX
+  }
+  uncertainty {
+    value: 70
+    analysis: MIN
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd0_hs_i[7]"
+      port: "INPAD"
+    }
+    arrival: 812
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd0_hs_i[7]"
+      port: "INPAD"
+    }
+    arrival: 642
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd0_hs_i[6]"
+      port: "INPAD"
+    }
+    arrival: 812
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd0_hs_i[6]"
+      port: "INPAD"
+    }
+    arrival: 642
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd0_hs_i[5]"
+      port: "INPAD"
+    }
+    arrival: 812
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd0_hs_i[5]"
+      port: "INPAD"
+    }
+    arrival: 642
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd0_hs_i[4]"
+      port: "INPAD"
+    }
+    arrival: 812
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd0_hs_i[4]"
+      port: "INPAD"
+    }
+    arrival: 642
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd0_hs_i[3]"
+      port: "INPAD"
+    }
+    arrival: 812
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd0_hs_i[3]"
+      port: "INPAD"
+    }
+    arrival: 642
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd0_hs_i[2]"
+      port: "INPAD"
+    }
+    arrival: 812
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd0_hs_i[2]"
+      port: "INPAD"
+    }
+    arrival: 642
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd0_hs_i[1]"
+      port: "INPAD"
+    }
+    arrival: 812
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd0_hs_i[1]"
+      port: "INPAD"
+    }
+    arrival: 642
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd0_hs_i[0]"
+      port: "INPAD"
+    }
+    arrival: 812
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd0_hs_i[0]"
+      port: "INPAD"
+    }
+    arrival: 642
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd1_hs_i[7]"
+      port: "INPAD"
+    }
+    arrival: 812
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd1_hs_i[7]"
+      port: "INPAD"
+    }
+    arrival: 642
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd1_hs_i[6]"
+      port: "INPAD"
+    }
+    arrival: 812
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd1_hs_i[6]"
+      port: "INPAD"
+    }
+    arrival: 642
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd1_hs_i[5]"
+      port: "INPAD"
+    }
+    arrival: 812
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd1_hs_i[5]"
+      port: "INPAD"
+    }
+    arrival: 642
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd1_hs_i[4]"
+      port: "INPAD"
+    }
+    arrival: 812
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd1_hs_i[4]"
+      port: "INPAD"
+    }
+    arrival: 642
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd1_hs_i[3]"
+      port: "INPAD"
+    }
+    arrival: 812
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd1_hs_i[3]"
+      port: "INPAD"
+    }
+    arrival: 642
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd1_hs_i[2]"
+      port: "INPAD"
+    }
+    arrival: 812
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd1_hs_i[2]"
+      port: "INPAD"
+    }
+    arrival: 642
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd1_hs_i[1]"
+      port: "INPAD"
+    }
+    arrival: 812
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd1_hs_i[1]"
+      port: "INPAD"
+    }
+    arrival: 642
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd1_hs_i[0]"
+      port: "INPAD"
+    }
+    arrival: 812
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd1_hs_i[0]"
+      port: "INPAD"
+    }
+    arrival: 642
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd2_hs_i[7]"
+      port: "INPAD"
+    }
+    arrival: 812
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd2_hs_i[7]"
+      port: "INPAD"
+    }
+    arrival: 642
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd2_hs_i[6]"
+      port: "INPAD"
+    }
+    arrival: 812
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd2_hs_i[6]"
+      port: "INPAD"
+    }
+    arrival: 642
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd2_hs_i[5]"
+      port: "INPAD"
+    }
+    arrival: 812
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd2_hs_i[5]"
+      port: "INPAD"
+    }
+    arrival: 642
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd2_hs_i[4]"
+      port: "INPAD"
+    }
+    arrival: 812
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd2_hs_i[4]"
+      port: "INPAD"
+    }
+    arrival: 642
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd2_hs_i[3]"
+      port: "INPAD"
+    }
+    arrival: 812
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd2_hs_i[3]"
+      port: "INPAD"
+    }
+    arrival: 642
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd2_hs_i[2]"
+      port: "INPAD"
+    }
+    arrival: 812
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd2_hs_i[2]"
+      port: "INPAD"
+    }
+    arrival: 642
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd2_hs_i[1]"
+      port: "INPAD"
+    }
+    arrival: 812
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd2_hs_i[1]"
+      port: "INPAD"
+    }
+    arrival: 642
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd2_hs_i[0]"
+      port: "INPAD"
+    }
+    arrival: 812
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd2_hs_i[0]"
+      port: "INPAD"
+    }
+    arrival: 642
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd3_hs_i[7]"
+      port: "INPAD"
+    }
+    arrival: 812
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd3_hs_i[7]"
+      port: "INPAD"
+    }
+    arrival: 642
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd3_hs_i[6]"
+      port: "INPAD"
+    }
+    arrival: 812
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd3_hs_i[6]"
+      port: "INPAD"
+    }
+    arrival: 642
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd3_hs_i[5]"
+      port: "INPAD"
+    }
+    arrival: 812
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd3_hs_i[5]"
+      port: "INPAD"
+    }
+    arrival: 642
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd3_hs_i[4]"
+      port: "INPAD"
+    }
+    arrival: 812
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd3_hs_i[4]"
+      port: "INPAD"
+    }
+    arrival: 642
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd3_hs_i[3]"
+      port: "INPAD"
+    }
+    arrival: 812
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd3_hs_i[3]"
+      port: "INPAD"
+    }
+    arrival: 642
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd3_hs_i[2]"
+      port: "INPAD"
+    }
+    arrival: 812
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd3_hs_i[2]"
+      port: "INPAD"
+    }
+    arrival: 642
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd3_hs_i[1]"
+      port: "INPAD"
+    }
+    arrival: 812
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd3_hs_i[1]"
+      port: "INPAD"
+    }
+    arrival: 642
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd3_hs_i[0]"
+      port: "INPAD"
+    }
+    arrival: 812
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  input_delay {
+    pin {
+      cell: "csi_rxd3_hs_i[0]"
+      port: "INPAD"
+    }
+    arrival: 642
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+  output_delay {
+    pin {
+      cell: "csi_rxd0_rst_o"
+      port: "OUTPAD"
+    }
+    setup: 615
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  output_delay {
+    pin {
+      cell: "csi_rxd0_rst_o"
+      port: "OUTPAD"
+    }
+    setup: 160
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+  output_delay {
+    pin {
+      cell: "csi_rxd1_rst_o"
+      port: "OUTPAD"
+    }
+    setup: 615
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  output_delay {
+    pin {
+      cell: "csi_rxd1_rst_o"
+      port: "OUTPAD"
+    }
+    setup: 160
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+  output_delay {
+    pin {
+      cell: "csi_rxd2_rst_o"
+      port: "OUTPAD"
+    }
+    setup: 615
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  output_delay {
+    pin {
+      cell: "csi_rxd2_rst_o"
+      port: "OUTPAD"
+    }
+    setup: 160
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+  output_delay {
+    pin {
+      cell: "csi_rxd3_rst_o"
+      port: "OUTPAD"
+    }
+    setup: 615
+    analysis: MAX
+    ref_clock_edge: RISING
+  }
+  output_delay {
+    pin {
+      cell: "csi_rxd3_rst_o"
+      port: "OUTPAD"
+    }
+    setup: 160
+    analysis: MIN
+    ref_clock_edge: RISING
+  }
+}
+exception {
+  type: FALSE_PATH
+  from {
+    clock: "hbramClk"
+  }
+  to {
+    clock: "hdmi_pixel"
+  }
+  analysis: BOTH
+}
+exception {
+  type: FALSE_PATH
+  from {
+    clock: "hbramClk"
+  }
+  to {
+    clock: "csi_rxc_i"
+  }
+  analysis: BOTH
+}
+exception {
+  type: FALSE_PATH
+  from {
+    clock: "hdmi_pixel"
+  }
+  to {
+    clock: "hbramClk"
+  }
+  analysis: BOTH
+}
+exception {
+  type: FALSE_PATH
+  from {
+    clock: "hdmi_pixel"
+  }
+  to {
+    clock: "hbramClk_Cal"
+  }
+  analysis: BOTH
+}
+exception {
+  type: FALSE_PATH
+  from {
+    clock: "csi_rxc_i"
+  }
+  to {
+    clock: "hbramClk"
+  }
+  analysis: BOTH
+}
+exception {
+  type: FALSE_PATH
+  from {
+    clock: "csi_rxc_i"
+  }
+  to {
+    clock: "hdmi_pixel"
+  }
+  analysis: BOTH
+}
+exception {
+  type: FALSE_PATH
+  from {
+    clock: "hdmi_pixel"
+  }
+  to {
+    clock: "csi_rxc_i"
+  }
+  analysis: BOTH
+}

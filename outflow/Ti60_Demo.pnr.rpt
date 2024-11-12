@@ -1,0 +1,59 @@
+
+---------- Resource Summary (begin) ----------
+Inputs: 94 / 1129 (8.33%)
+Outputs: 383 / 1456 (26.30%)
+Global Clocks (GBUF): 13 / 32 (40.62%)
+Regional Clocks (RBUF): 0 / 32 (0.00%)
+	RBUF: Core: 0 / 16 (0.00%)
+	RBUF: Periphery: 0 / 8 (0.00%)
+	RBUF: Multi-Region: 0 / 8 (0.00%)
+XLRs: 22600 / 60800 (37.17%)
+	XLRs needed for Logic: 11233 / 60800 (18.48%)
+	XLRs needed for Logic + FF: 4455 / 60800 (7.33%)
+	XLRs needed for Adder: 4909 / 60800 (8.07%)
+	XLRs needed for Adder + FF: 163 / 60800 (0.27%)
+	XLRs needed for FF: 1704 / 60800 (2.80%)
+	XLRs needed for SRL8: 136 / 14720 (0.92%)
+	XLRs needed for SRL8+FF: 0 / 14720 (0.00%)
+	XLRs needed for Routing: 0 / 60800 (0.00%)
+Memory Blocks: 56 / 256 (21.88%)
+DSP Blocks: 65 / 160 (40.62%)
+---------- Resource Summary (end) ----------
+
+
+---------- DSP Packer Summary (begin) ----------
+
+	DSP48 blocks required to legally pack design: 65
+	DSP48 blocks recoverable by optimizing:
+		-> DSP24/12 control signals & parameters: 0
+	Best case scenario DSP count after optimizing: 65
+
+---------- DSP Packer Summary (end) ----------
+
+
+
+---------- GBUFCE Assignments (begin) ----------
+
+
++-------------------+----------+----------+
+|     Clock Net     | GBUFCE_X | GBUFCE_Y |
++-------------------+----------+----------+
+|     csi_rxc_i     |   218    |   162    |
+|   dsi_byteclk_i   |   111    |    1     |
+|     dsi_fb_i      |   112    |    1     |
+|   dsi_serclk_i    |   110    |    1     |
+|   dsi_txcclk_i    |   107    |    1     |
+|     hbramClk      |   110    |   322    |
+|    hbramClk90     |   218    |   159    |
+|   hbramClk_Cal    |   111    |   322    |
+|    hdmi_pixel     |    1     |   159    |
+|  hdmi_pixel_10x   |    1     |   162    |
+|   sensor_xclk_i   |    1     |   163    |
+|     sys_clk_i     |    1     |   164    |
+| usrt_inst/pa_flag |    1     |   158    |
++-------------------+----------+----------+
+
+
+----------- GBUFCE Assignments (end) ----------
+
+

@@ -1,0 +1,113 @@
+
+# Efinity Pinout Report
+# Version: 2023.2.307
+# Date: 2024-11-11 23:31
+
+# Copyright (C) 2013 - 2023 Efinix Inc. All rights reserved.
+
+# Device: Ti60F100S3F2
+# Package status: final
+# Project: Ti60_Demo
+# Configuration mode: active (x2)
+
+Pin Number,Pin Name,Signal Name,Direction,Bank,I/O Bank Voltage,I/O Standard,Pull Type,Function
+A1,GND,,Power,,,,,Ground
+A2,VCCA_TL,,Power,,,,,0.95 V PLL Power
+A3,REF_RES_1B,,Input,1B,1.2 V,,,
+A4,GPIOT_P_01,csi_trig_io.P,Bidirectional,2A_2B,1.8 V,1.8 V LVCMOS,,User IO
+A5,GND,,Power,,,,,Ground
+A6,VCCIO2A_2B,,Power,2A_2B,1.8 V,,,VCCIO Power
+A7,VCCA_TR,,Power,,,,,0.95 V PLL Power
+A8,GND,,Power,,,,,Ground
+A9,GPIOR_P_19_PLLIN0,uart_tx_o.P,Output,3A,1.2 V,1.2 V LVCMOS,,User IO/PLL_CLKIN
+A10,GPIOR_N_19,uart_rx_i.N,Input,3A,1.2 V,1.2 V LVCMOS,weak pullup,User IO/PLL_CLKIN
+B1,GPIOL_P_13_CBSEL0,dsi_txd0.P,Output,1B,1.2 V,,,User IO
+B2,GPIOL_N_18,led_o.N,Output,1B,1.2 V,1.2 V LVCMOS,,User IO/PLL_CLKIN
+B3,GPIOL_P_18_PLLIN0,clk_27m.P,Input,1B,1.2 V,1.2 V LVCMOS,,User IO/PLL_CLKIN
+B4,GPIOL_P_17_EXTFB,csi_tx_sda_io.P,Bidirectional,1B,1.2 V,1.2 V LVCMOS,,User IO/PLL_EXTFB
+B5,REF_RES_2A,,Input,2A_2B,1.8 V,,,
+B6,VCCAUX,,Power,1A_4B,1.8 V,,,
+B7,REF_RES_3A,,Input,3A,1.2 V,,,
+B8,GPIOR_N_13,csi_rxd2.N,Input,3A,1.2 V,,,User IO
+B9,GPIOR_P_14,csi_rxd1.P,Input,3A,1.2 V,,,User IO
+B10,GPIOR_N_14,csi_rxd1.N,Input,3A,1.2 V,,,User IO
+C1,GPIOL_N_13_CBSEL1,dsi_txd0.N,Output,1B,1.2 V,,,User IO
+C2,GPIOL_N_12,dsi_txc.N,Output,1B,1.2 V,,,User IO
+C3,GPIOL_P_12,dsi_txc.P,Output,1B,1.2 V,,,User IO
+C4,GPIOL_N_17,csi_tx_scl_io.N,Bidirectional,1B,1.2 V,1.2 V LVCMOS,,User IO/PLL_EXTFB
+C5,GPIOL_P_15_NSTATUS,dsi_pwm_o.P,Output,1B,1.2 V,1.2 V LVCMOS,,User IO/VREF/Configuration
+C6,VCC,,Power,,,,,0.95 V VCC Power
+C7,GPIOR_N_10_CLK9_N,csi_rxc.N,Input,3A,1.2 V,,,User IO/GCLK/RCLK
+C8,GPIOR_P_13,csi_rxd2.P,Input,3A,1.2 V,,,User IO/VREF
+C9,VCCIO3A,,Power,3A,1.2 V,,,VCCIO Power
+C10,GPIOR_N_12,csi_rxd0.N,Input,3A,1.2 V,,,User IO
+D1,GPIOL_N_10_CLK3_N,dsi_txd2.N,Output,1B,1.2 V,,,User IO/GCLK/RCLK
+D2,GND,,Power,,,,,Ground
+D3,VCCIO1B,,Power,1B,1.2 V,,,VCCIO Power
+D4,GND,,Power,,,,,Ground
+D5,GPIOL_N_15_TEST_N,csi2_sda_io.N,Bidirectional,1B,1.2 V,1.2 V LVCMOS,,User IO/Configuration
+D6,GPIOR_P_10_CLK9_P,csi_rxc.P,Input,3A,1.2 V,,,User IO/GCLK/RCLK
+D7,VCC,,Power,,,,,0.95 V VCC Power
+D8,GPIOR_P_11_CLK8_P,csi_rxd3.P,Input,3A,1.2 V,,,User IO/GCLK/RCLK
+D9,GPIOR_N_11_CLK8_N,csi_rxd3.N,Input,3A,1.2 V,,,User IO/GCLK/RCLK
+D10,GPIOR_P_12,csi_rxd0.P,Input,3A,1.2 V,,,User IO
+E1,GPIOL_P_10_CLK3_P,dsi_txd2.P,Output,1B,1.2 V,,,User IO/GCLK/RCLK/Configuration
+E2,GPIOL_P_11,dsi_txd3.P,Output,1B,1.2 V,,,User IO
+E3,GPIOL_N_11,dsi_txd3.N,Output,1B,1.2 V,,,User IO
+E4,GPIOL_P_08_CLK1_P,hdmi_txd2.P,Output,1A_4B,1.8 V,,,User IO/GCLK/RCLK
+E5,GPIOL_N_08_CLK1_N,hdmi_txd2.N,Output,1A_4B,1.8 V,,,User IO/GCLK/RCLK/Configuration
+E6,VCC,,Power,,,,,0.95 V VCC Power
+E7,GPIOR_N_08_CLK11_N,csi_txd1.N,Output,3B_4A,1.2 V,,,User IO/GCLK/RCLK
+E8,GPIOR_P_09_CLK10_P,csi_txd0.P,Output,3B_4A,1.2 V,,,User IO/GCLK/RCLK
+E9,GPIOR_N_09_CLK10_N,csi_txd0.N,Output,3B_4A,1.2 V,,,User IO/GCLK/RCLK
+E10,GND,,Power,,,,,Ground
+F1,GPIOL_N_06,hdmi_txc.N,Output,1A_4B,1.8 V,,,User IO
+F2,GPIOL_N_09_CLK2_N,dsi_txd1.N,Output,1B,1.2 V,,,User IO/GCLK/RCLK
+F3,GPIOL_P_09_CLK2_P,dsi_txd1.P,Output,1B,1.2 V,,,User IO/GCLK/RCLK
+F4,GPIOL_P_07_CLK0_P,hdmi_txd1.P,Output,1A_4B,1.8 V,,,User IO/GCLK/RCLK
+F5,GPIOL_N_07_CLK0_N,hdmi_txd1.N,Output,1A_4B,1.8 V,,,User IO/GCLK/RCLK
+F6,VCC,,Power,,,,,0.95 V VCC Power
+F7,GPIOR_P_08_CLK11_P,csi_txd1.P,Output,3B_4A,1.2 V,,,User IO/GCLK/RCLK
+F8,GPIOR_N_07,csi_txd2.N,Output,3B_4A,1.2 V,,,User IO
+F9,GPIOR_P_06_CDI20,csi_txc.P,Output,3B_4A,1.2 V,,,User IO
+F10,GPIOR_N_06_CDI21,csi_txc.N,Output,3B_4A,1.2 V,,,User IO
+G1,GPIOL_P_06,hdmi_txc.P,Output,1A_4B,1.8 V,,,User IO
+G2,VCCIO1A_4B,,Power,1A_4B,1.8 V,,,VCCIO Power
+G3,GPIOL_N_05,hdmi_txd0.N,Output,1A_4B,1.8 V,,,User IO
+G4,GPIOL_P_05,hdmi_txd0.P,Output,1A_4B,1.8 V,,,User IO
+G5,VCC,,Power,,,,,0.95 V VCC Power
+G6,VCCAUX,,Power,1A_4B,1.8 V,,,
+G7,GND,,Power,,,,,Ground
+G8,GPIOR_P_07,csi_txd2.P,Output,3B_4A,1.2 V,,,User IO
+G9,VCCIO3B_4A,,Power,3B_4A,1.2 V,,,VCCIO Power
+G10,GPIOR_N_04_CDI29,csi2_rxd3.N,Input,3B_4A,1.2 V,,,User IO
+H1,GPIOL_N_03_CDI1,spi.MISO.N,Bidirectional,1A_4B,1.8 V,,,User IO/Configuration
+H2,GPIOL_P_03_CDI0,spi.MOSI.P,Bidirectional,1A_4B,1.8 V,,,User IO/Configuration
+H3,CDONE,,Bidirectional,1A_4B,1.8 V,,,Configuration
+H4,REF_RES_1A,,Input,1A_4B,1.8 V,,,
+H5,GPIOR_N_00_CDI22,csi2_rxd1.N,Input,3B_4A,1.2 V,,,User IO/PLL_CLKIN
+H6,GPIOR_P_03_CDI26,csi2_rxd0.P,Input,3B_4A,1.2 V,,,User IO
+H7,VCC,,Power,,,,,0.95 V VCC Power
+H8,GPIOR_N_05_CDI31,csi_txd3.N,Output,3B_4A,1.2 V,,,User IO
+H9,GPIOR_P_05_CDI30,csi_txd3.P,Output,3B_4A,1.2 V,,,User IO/VREF
+H10,GPIOR_P_04_CDI28,csi2_rxd3.P,Input,3B_4A,1.2 V,,,User IO
+J1,GPIOL_P_01_SSL_N,spi.CS_N.P,Bidirectional,1A_4B,1.8 V,,,User IO/Configuration
+J2,GPIOL_N_01_CCK,spi.SCLK.N,Bidirectional,1A_4B,1.8 V,,,User IO/Configuration
+J3,VCCIO33_BL,,Power,BL,1.8 V,,,VCCIO Power
+J4,TDO,,Output,BL,1.8 V,,,Configuration
+J5,GPIOR_P_00_PLLIN0,csi2_rxd1.P,Input,3B_4A,1.2 V,,,User IO/PLL_CLKIN
+J6,GPIOR_N_03_CDI27,csi2_rxd0.N,Input,3B_4A,1.2 V,,,User IO
+J7,GPIOR_N_02_CDI25,csi2_rxc.N,Input,3B_4A,1.2 V,,,User IO
+J8,GPIOR_P_02_CDI24,csi2_rxc.P,Input,3B_4A,1.2 V,,,User IO
+J9,GND,,Power,,,,,Ground
+J10,GPIOR_N_01_CDI23,csi2_rxd2.N,Input,3B_4A,1.2 V,,,User IO/PLL_EXTFB
+K1,CRESET_N,,Input,1A_4B,1.8 V,,,Configuration
+K2,GND,,Power,,,,,Ground
+K3,TCK,,Input,BL,1.8 V,,,Configuration
+K4,TMS,,Input,BL,1.8 V,,,Configuration
+K5,TDI,,Input,BL,1.8 V,,,Configuration
+K6,GND,,Power,,,,,Ground
+K7,VCCA_BR,,Power,,,,,0.95 V PLL Power
+K8,REF_RES_4A,,Input,3B_4A,1.2 V,,,
+K9,REF_RES_3B,,Input,3B_4A,1.2 V,,,
+K10,GPIOR_P_01_EXTFB,csi2_rxd2.P,Input,3B_4A,1.2 V,,,User IO/PLL_EXTFB

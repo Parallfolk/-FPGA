@@ -1,0 +1,262 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2023.2.307 
+Date: Mon Nov 11 23:31:27 2024
+
+Copyright (C) 2013 - 2023 Efinix, Inc. All rights reserved.
+ 
+Family: Titanium 
+Device: Ti60F100S3F2
+Top-level Entity Name: Ti60_Demo
+Elapsed time for packing: 0 hours 0 minutes 0 seconds
+
+---------- Resource Summary (begin) ----------
+Inputs: 94 / 1129 (8.33%)
+Outputs: 383 / 1456 (26.30%)
+Global Clocks (GBUF): 13 / 32 (40.62%)
+Regional Clocks (RBUF): 0 / 32 (0.00%)
+	RBUF: Core: 0 / 16 (0.00%)
+	RBUF: Periphery: 0 / 8 (0.00%)
+	RBUF: Multi-Region: 0 / 8 (0.00%)
+XLRs: 22600 / 60800 (37.17%)
+	XLRs needed for Logic: 11233 / 60800 (18.48%)
+	XLRs needed for Logic + FF: 4455 / 60800 (7.33%)
+	XLRs needed for Adder: 4909 / 60800 (8.07%)
+	XLRs needed for Adder + FF: 163 / 60800 (0.27%)
+	XLRs needed for FF: 1704 / 60800 (2.80%)
+	XLRs needed for SRL8: 136 / 14720 (0.92%)
+	XLRs needed for SRL8+FF: 0 / 14720 (0.00%)
+	XLRs needed for Routing: 0 / 60800 (0.00%)
+Memory Blocks: 56 / 256 (21.88%)
+DSP Blocks: 65 / 160 (40.62%)
+---------- Resource Summary (end) ----------
+
+
+---------- DSP Packer Summary (begin) ----------
+
+	DSP48 blocks required to legally pack design: 65
+	DSP48 blocks recoverable by optimizing:
+		-> DSP24/12 control signals & parameters: 0
+	Best case scenario DSP count after optimizing: 65
+
+---------- DSP Packer Summary (end) ----------
+
+
+---------- DSP48 Block Information (begin) ----------
+
++--------------------------------------+--------+--------+---------+-------+-------+-------+-------------+
+|                 NAME                 |  MODE  | SIGNED | SHIFTER | M_SEL | N_SEL | W_SEL | CASCOUT_SEL |
++--------------------------------------+--------+--------+---------+-------+-------+-------+-------------+
+| u_rgb2dvi/Rectangular_inst/mult_489  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_507  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_510  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_528  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_531  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_549  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_574  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_577  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_595  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_598  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_616  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_619  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_637  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_662  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_665  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_683  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_686  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_704  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_707  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_725  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_750  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_753  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_771  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_774  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_792  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_795  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_813  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_838  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_841  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_859  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_862  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_880  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_883  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_901  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_926  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_929  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_947  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_950  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_968  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_971  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_989  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_1014 | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_1017 | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_1035 | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_1038 | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_1056 | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_1059 | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_1077 | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_1102 | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_1105 | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_1123 | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_1126 | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_1144 | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_1147 | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_1165 | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_1190 | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_1193 | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_1211 | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_1214 | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_1232 | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_1235 | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_1253 | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_1302 | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_1341 | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| u_rgb2dvi/Rectangular_inst/mult_486  | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
++--------------------------------------+--------+--------+---------+-------+-------+-------+-------------+
+
+----------- DSP48 Block Information (end) ----------
+
+
+---------- Simple Dual Port RAM Information (begin) ----------
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------+-------------+--------------+------------+
+|                                                                             NAME                                                                             | MODE | READ_WIDTH | WRITE_WIDTH |  WRITE_MODE  | OUTPUT_REG |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------+-------------+--------------+------------+
+|      u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_data_fifo/xefx_fifo_ram/ram__D$c121       | SDP  |     4      |     16      | READ_UNKNOWN |   false    |
+|         u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/addr_fifo/xefx_fifo_ram/ram__D$2          | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|        u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/addr_fifo/xefx_fifo_ram/ram__D$b12         | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|         u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/addr_fifo/xefx_fifo_ram/ram__D$12         | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|         u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/addr_fifo/xefx_fifo_ram/ram__D$c1         | SDP  |     8      |      8      | READ_UNKNOWN |   false    |
+|       u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_data_fifo/xefx_fifo_ram/ram__D$d1        | SDP  |     5      |     20      | READ_UNKNOWN |   false    |
+|      u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_data_fifo/xefx_fifo_ram/ram__D$b1b2       | SDP  |     4      |     16      | READ_UNKNOWN |   false    |
+|       u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_data_fifo/xefx_fifo_ram/ram__D$b2        | SDP  |     4      |     16      | READ_UNKNOWN |   false    |
+|       u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_data_fifo/xefx_fifo_ram/ram__D$1b2       | SDP  |     4      |     16      | READ_UNKNOWN |   false    |
+|      u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_data_fifo/xefx_fifo_ram/ram__D$b121       | SDP  |     4      |     16      | READ_UNKNOWN |   false    |
+|      u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_data_fifo/xefx_fifo_ram/ram__D$c1b2       | SDP  |     4      |     16      | READ_UNKNOWN |   false    |
+|       u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_data_fifo/xefx_fifo_ram/ram__D$21        | SDP  |     4      |     16      | READ_UNKNOWN |   false    |
+|       u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_data_fifo/xefx_fifo_ram/ram__D$121       | SDP  |     4      |     16      | READ_UNKNOWN |   false    |
+|         u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_counter_fifo/xefx_fifo_ram/ram         | SDP  |     5      |      5      | READ_UNKNOWN |   false    |
+|      u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_data_fifo/xefx_fifo_ram/ram__D$d1b2       | SDP  |     16     |      4      | READ_UNKNOWN |   false    |
+|       u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_data_fifo/xefx_fifo_ram/ram__D$b2        | SDP  |     16     |      4      | READ_UNKNOWN |   false    |
+|       u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_data_fifo/xefx_fifo_ram/ram__D$21        | SDP  |     16     |      4      | READ_UNKNOWN |   false    |
+|       u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_data_fifo/xefx_fifo_ram/ram__D$1b2       | SDP  |     16     |      4      | READ_UNKNOWN |   false    |
+|       u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_data_fifo/xefx_fifo_ram/ram__D$121       | SDP  |     16     |      4      | READ_UNKNOWN |   false    |
+|      u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_data_fifo/xefx_fifo_ram/ram__D$b1b2       | SDP  |     16     |      4      | READ_UNKNOWN |   false    |
+|      u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_data_fifo/xefx_fifo_ram/ram__D$b121       | SDP  |     16     |      4      | READ_UNKNOWN |   false    |
+|      u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_data_fifo/xefx_fifo_ram/ram__D$c1b2       | SDP  |     16     |      4      | READ_UNKNOWN |   false    |
+|      u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_data_fifo/xefx_fifo_ram/ram__D$c121       | SDP  |     16     |      4      | READ_UNKNOWN |   false    |
+| u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk3.hbram_cal_top_inst/hbram_cal_ctrl_inst/genblk7.genblk1.rd_data_fifo/xefx_fifo_ram/ram__D$1 | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+| u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk3.hbram_cal_top_inst/hbram_cal_ctrl_inst/genblk7.genblk1.rd_data_fifo/xefx_fifo_ram/ram__D$2 | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|                           mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk2.lane_aligner_inst/genblk1[0].u1_inst/xefx_fifo_ram/ram                            | SDP  |     8      |      8      |  READ_FIRST  |   false    |
+|                           mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk2.lane_aligner_inst/genblk1[1].u1_inst/xefx_fifo_ram/ram                            | SDP  |     8      |      8      |  READ_FIRST  |   false    |
+|                           mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk2.lane_aligner_inst/genblk1[2].u1_inst/xefx_fifo_ram/ram                            | SDP  |     8      |      8      |  READ_FIRST  |   false    |
+|                           mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk2.lane_aligner_inst/genblk1[3].u1_inst/xefx_fifo_ram/ram                            | SDP  |     8      |      8      |  READ_FIRST  |   false    |
+|                              mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ram/ram__D$f12                               | SDP  |     5      |      5      | READ_UNKNOWN |   false    |
+|                              mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ram/ram__D$c12                               | SDP  |     5      |      5      | READ_UNKNOWN |   false    |
+|                               mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ram/ram__D$12                               | SDP  |     5      |      5      | READ_UNKNOWN |   false    |
+|                              mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ram/ram__D$d12                               | SDP  |     5      |      5      | READ_UNKNOWN |   false    |
+|                              mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ram/ram__D$e12                               | SDP  |     5      |      5      | READ_UNKNOWN |   false    |
+|                              mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ram/ram__D$b12                               | SDP  |     5      |      5      | READ_UNKNOWN |   false    |
+|                               mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ram/ram__D$2                                | SDP  |     4      |      4      | READ_UNKNOWN |   false    |
+|                              mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ram/ram__D$g12                               | SDP  |     5      |      5      | READ_UNKNOWN |   false    |
+|                              mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ram/ram__D$h12                               | SDP  |     5      |      5      | READ_UNKNOWN |   false    |
+|                              mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ram/ram__D$i12                               | SDP  |     5      |      5      | READ_UNKNOWN |   false    |
+|                              mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ram/ram__D$j12                               | SDP  |     5      |      5      | READ_UNKNOWN |   false    |
+|                              mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ram/ram__D$k12                               | SDP  |     5      |      5      | READ_UNKNOWN |   false    |
+|                               mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ram/ram__D$l1                               | SDP  |     5      |      5      | READ_UNKNOWN |   false    |
+|                                               u_axi4_ctrl/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ram/ram__D$2                                                | SDP  |     16     |     16      |  READ_FIRST  |   false    |
+|                                              u_axi4_ctrl/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ram/ram__D$b12                                               | SDP  |     16     |     16      |  READ_FIRST  |   false    |
+|                                               u_axi4_ctrl/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ram/ram__D$12                                               | SDP  |     16     |     16      |  READ_FIRST  |   false    |
+|                                              u_axi4_ctrl/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ram/ram__D$c12                                               | SDP  |     20     |     20      |  READ_FIRST  |   false    |
+|                                              u_axi4_ctrl/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ram/ram__D$d12                                               | SDP  |     20     |     20      |  READ_FIRST  |   false    |
+|                                              u_axi4_ctrl/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ram/ram__D$e12                                               | SDP  |     20     |     20      |  READ_FIRST  |   false    |
+|                                               u_axi4_ctrl/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ram/ram__D$f1                                               | SDP  |     20     |     20      |  READ_FIRST  |   false    |
+|                                               u_axi4_ctrl/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ram/ram__D$2                                                | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|                                              u_axi4_ctrl/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ram/ram__D$b12                                               | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|                                               u_axi4_ctrl/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ram/ram__D$12                                               | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|                                              u_axi4_ctrl/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ram/ram__D$c12                                               | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|                                              u_axi4_ctrl/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ram/ram__D$d12                                               | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|                                              u_axi4_ctrl/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ram/ram__D$e12                                               | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|                                               u_axi4_ctrl/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ram/ram__D$f1                                               | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------+-------------+--------------+------------+
+
+----------- Simple Dual Port RAM Information (end) ----------
+
+
+---------- IO Interface Summary (begin) ----------
+
++------------------------+--------------+
+| Missing Interface Pins | Input/Output |
++------------------------+--------------+
+|     spi_mosi_d0_i      |    Input     |
+|     spi_miso_d1_i      |    Input     |
+|      spi_wpn_d2_i      |    Input     |
+|     spi_holdn_d3_i     |    Input     |
+|    dsi_txd1_lp_p_i     |    Input     |
+|    dsi_txd1_lp_n_i     |    Input     |
+|    dsi_txd2_lp_p_i     |    Input     |
+|    dsi_txd2_lp_n_i     |    Input     |
+|    dsi_txd3_lp_p_i     |    Input     |
+|    dsi_txd3_lp_n_i     |    Input     |
+|    dsi_txd0_lp_p_i     |    Input     |
+|    dsi_txd0_lp_n_i     |    Input     |
+|       csi2_sda_i       |    Input     |
+|      csi_tx_sda_i      |    Input     |
+|      csi_tx_scl_i      |    Input     |
+|       csi_trig_i       |    Input     |
+|   csi2_rxd1_hs_i[0]    |    Input     |
+|   csi2_rxd1_hs_i[1]    |    Input     |
+|   csi2_rxd1_hs_i[2]    |    Input     |
+|   csi2_rxd1_hs_i[3]    |    Input     |
+|   csi2_rxd1_hs_i[4]    |    Input     |
+|   csi2_rxd1_hs_i[5]    |    Input     |
+|   csi2_rxd1_hs_i[6]    |    Input     |
+|   csi2_rxd1_hs_i[7]    |    Input     |
+|    csi2_rxd1_lp_p_i    |    Input     |
+|    csi2_rxd1_lp_n_i    |    Input     |
+|   csi2_rxd2_hs_i[0]    |    Input     |
+|   csi2_rxd2_hs_i[1]    |    Input     |
+|   csi2_rxd2_hs_i[2]    |    Input     |
+|   csi2_rxd2_hs_i[3]    |    Input     |
+|   csi2_rxd2_hs_i[4]    |    Input     |
+|   csi2_rxd2_hs_i[5]    |    Input     |
+|   csi2_rxd2_hs_i[6]    |    Input     |
+|   csi2_rxd2_hs_i[7]    |    Input     |
+|    csi2_rxd2_lp_p_i    |    Input     |
+|    csi2_rxd2_lp_n_i    |    Input     |
+|    csi2_rxc_lp_p_i     |    Input     |
+|    csi2_rxc_lp_n_i     |    Input     |
+|   csi2_rxd0_hs_i[0]    |    Input     |
+|   csi2_rxd0_hs_i[1]    |    Input     |
+|   csi2_rxd0_hs_i[2]    |    Input     |
+|   csi2_rxd0_hs_i[3]    |    Input     |
+|   csi2_rxd0_hs_i[4]    |    Input     |
+|   csi2_rxd0_hs_i[5]    |    Input     |
+|   csi2_rxd0_hs_i[6]    |    Input     |
+|   csi2_rxd0_hs_i[7]    |    Input     |
+|    csi2_rxd0_lp_p_i    |    Input     |
+|    csi2_rxd0_lp_n_i    |    Input     |
+|   csi2_rxd3_hs_i[0]    |    Input     |
+|   csi2_rxd3_hs_i[1]    |    Input     |
+|   csi2_rxd3_hs_i[2]    |    Input     |
+|   csi2_rxd3_hs_i[3]    |    Input     |
+|   csi2_rxd3_hs_i[4]    |    Input     |
+|   csi2_rxd3_hs_i[5]    |    Input     |
+|   csi2_rxd3_hs_i[6]    |    Input     |
+|   csi2_rxd3_hs_i[7]    |    Input     |
+|    csi2_rxd3_lp_p_i    |    Input     |
+|    csi2_rxd3_lp_n_i    |    Input     |
+|    csi_txd3_lp_p_i     |    Input     |
+|    csi_txd3_lp_n_i     |    Input     |
+|    csi_txd2_lp_p_i     |    Input     |
+|    csi_txd2_lp_n_i     |    Input     |
+|    csi_txd1_lp_p_i     |    Input     |
+|    csi_txd1_lp_n_i     |    Input     |
+|    csi_txd0_lp_p_i     |    Input     |
+|    csi_txd0_lp_n_i     |    Input     |
+|       csi2_rxc_i       |    Input     |
++------------------------+--------------+
+
+----------- IO Interface Summary (end) ----------
+
+Elapsed time for placement: 0 hours 1 minutes 49 seconds

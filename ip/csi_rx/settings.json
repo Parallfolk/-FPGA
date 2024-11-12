@@ -1,0 +1,96 @@
+{
+    "args": [
+        "-o",
+        "csi_rx",
+        "--base_path",
+        "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip",
+        "--vlnv",
+        {
+            "vendor": "efinixinc.com",
+            "library": "mipi",
+            "name": "efx_csi2_rx",
+            "version": "5.3.1"
+        }
+    ],
+    "conf": {
+        "tLPX_NS": "50",
+        "tINIT_NS": "1000",
+        "tCLK_TERM_EN_NS": "38",
+        "tD_TERM_EN_NS": "35",
+        "tHS_SETTLE_NS": "85",
+        "tHS_PREPARE_ZERO_NS": "145",
+        "NUM_DATA_LANE": "4",
+        "ASYNC_STAGE": "2",
+        "HS_BYTECLK_MHZ": "187",
+        "CLOCK_FREQ_MHZ": "50",
+        "DPHY_CLOCK_MODE": "\"Discontinuous\"",
+        "PIXEL_FIFO_DEPTH": "2048",
+        "AREGISTER": "8",
+        "ENABLE_USER_DESKEWCAL": "1'b0",
+        "Pack_40": "1'b1",
+        "Pack_48": "1'b1",
+        "Pack_56": "1'b1",
+        "Pack_64": "1'b1",
+        "FRAME_MODE": "\"GENERIC\"",
+        "ENABLE_VCX": "1'b0"
+    },
+    "output": {
+        "external_source_source": [
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\csi_rx.sv",
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\csi_rx_tmpl.v",
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\csi_rx_define.vh",
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\csi_rx_tmpl.vhd"
+        ],
+        "external_example_example": [
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Ti60F225_devkit\\data_unpack.v",
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Ti60F225_devkit\\datatype_gen.v",
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Ti60F225_devkit\\dual_clock_fifo.v",
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Ti60F225_devkit\\pattern_gen.v",
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Ti60F225_devkit\\shift_reg.v",
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Ti60F225_devkit\\simple_dual_port_ram.v",
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Ti60F225_devkit\\vga_gen.v",
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Ti60F225_devkit\\reset.v",
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Ti60F225_devkit\\top.sv",
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Ti60F225_devkit\\efx_csi2_tx.sv",
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Ti60F225_devkit\\mipi.sdc",
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Ti60F225_devkit\\pattern_gen2.v",
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Ti60F225_devkit\\lfsr.v",
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Ti60F225_devkit\\csi_rx.sv",
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Ti60F225_devkit\\csi_rx_define.vh",
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Ti60F225_devkit\\top.xml",
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Ti60F225_devkit\\top.peri.xml"
+        ],
+        "external_testbench_testbench": [
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Testbench\\data_unpack.v",
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Testbench\\datatype_gen.v",
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Testbench\\dual_clock_fifo.v",
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Testbench\\pattern_gen.v",
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Testbench\\shift_reg.v",
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Testbench\\simple_dual_port_ram.v",
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Testbench\\vga_gen.v",
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Testbench\\reset.v",
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Testbench\\TI60_MIPI_csi_tb.sv",
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Testbench\\TI60_MIPI_csi_rx_modelsim.do",
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Testbench\\rx_filelist.f",
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Testbench\\top.sv",
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Testbench\\efx_csi2_tx_modelsim.sv",
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Testbench\\pattern_gen2.v",
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Testbench\\lfsr.v",
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Testbench\\csi_rx_define.vh"
+        ],
+        "external_testbench_modelsim": [
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Testbench\\modelsim\\csi_rx.sv"
+        ],
+        "external_testbench_ncsim": [
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Testbench\\ncsim\\csi_rx.sv"
+        ],
+        "external_testbench_synopsys": [
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Testbench\\synopsys\\csi_rx.sv"
+        ],
+        "external_testbench_aldec": [
+            "D:\\FPGA_learning\\Ti60F100_SC130GS_VersionUp\\V1_Ti60F100_SC2210_HDMI\\ip\\csi_rx\\Testbench\\aldec\\csi_rx.sv"
+        ]
+    },
+    "sw_version": "2023.2.307",
+    "generated_date": "2024-06-03T03:47:19.052102"
+}

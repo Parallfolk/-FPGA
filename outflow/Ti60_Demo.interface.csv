@@ -1,0 +1,553 @@
+
+# Efinity Interface Configuration
+# Version: 2023.2.307
+# Date: 2024-11-11 23:31
+
+# Copyright (C) 2013 - 2023 Efinix Inc. All rights reserved.
+
+# [required | optional] (input|output|clkout), x, y, z, __bypass__|[~|!]<clock>, [[~|!]<pin_name>] | __vcc__ | __gnd__
+clkout, 0, 175, -1, dsi_byteclk_i
+clkout, 0, 185, -1, dsi_byteclk_i
+clkout, 0, 199, -1, dsi_byteclk_i
+clkout, 0, 211, -1, dsi_byteclk_i
+clkout, 0, 228, -1, dsi_byteclk_i
+clkout, 219, 99, -1, dsi_byteclk_i
+clkout, 219, 114, -1, dsi_byteclk_i
+clkout, 219, 131, -1, dsi_byteclk_i
+clkout, 219, 143, -1, dsi_byteclk_i
+clkout, 219, 154, -1, dsi_byteclk_i
+clkout, 203, 0, -1, dsi_fb_i
+clkout, 0, 171, -1, dsi_serclk_i
+clkout, 0, 181, -1, dsi_serclk_i
+clkout, 0, 195, -1, dsi_serclk_i
+clkout, 0, 224, -1, dsi_serclk_i
+clkout, 219, 95, -1, dsi_serclk_i
+clkout, 219, 127, -1, dsi_serclk_i
+clkout, 219, 139, -1, dsi_serclk_i
+clkout, 219, 150, -1, dsi_serclk_i
+clkout, 0, 207, -1, dsi_txcclk_i
+clkout, 219, 110, -1, dsi_txcclk_i
+clkout, 74, 323, -1, hbramClk
+clkout, 122, 323, -1, hbramClk
+clkout, 131, 323, -1, hbramClk
+clkout, 201, 323, -1, hbramClk
+clkout, 24, 323, -1, hbramClk_Cal
+clkout, 25, 323, -1, hbramClk_Cal
+clkout, 48, 323, -1, hbramClk_Cal
+clkout, 49, 323, -1, hbramClk_Cal
+clkout, 56, 323, -1, hbramClk_Cal
+clkout, 57, 323, -1, hbramClk_Cal
+clkout, 64, 323, -1, hbramClk_Cal
+clkout, 65, 323, -1, hbramClk_Cal
+clkout, 72, 323, -1, hbramClk_Cal
+clkout, 129, 323, -1, hbramClk_Cal
+clkout, 140, 323, -1, hbramClk_Cal
+clkout, 141, 323, -1, hbramClk_Cal
+clkout, 148, 323, -1, hbramClk_Cal
+clkout, 149, 323, -1, hbramClk_Cal
+clkout, 156, 323, -1, hbramClk_Cal
+clkout, 157, 323, -1, hbramClk_Cal
+clkout, 164, 323, -1, hbramClk_Cal
+clkout, 165, 323, -1, hbramClk_Cal
+clkout, 0, 102, -1, hdmi_pixel
+clkout, 0, 119, -1, hdmi_pixel
+clkout, 0, 135, -1, hdmi_pixel
+clkout, 0, 152, -1, hdmi_pixel
+clkout, 0, 98, -1, hdmi_pixel_10x
+clkout, 0, 115, -1, hdmi_pixel_10x
+clkout, 0, 131, -1, hdmi_pixel_10x
+clkout, 0, 148, -1, hdmi_pixel_10x
+clkout, 0, 304, -1, sensor_xclk_i
+clkout, 200, 323, -1, sys_clk_i
+clkout, 202, 0, -1, sys_clk_i
+clkout, 75, 323, -1, ~hbramClk90
+clkout, 83, 323, -1, ~hbramClk90
+clkout, 26, 323, -1, ~hbramClk
+clkout, 27, 323, -1, ~hbramClk
+clkout, 50, 323, -1, ~hbramClk
+clkout, 51, 323, -1, ~hbramClk
+clkout, 58, 323, -1, ~hbramClk
+clkout, 59, 323, -1, ~hbramClk
+clkout, 66, 323, -1, ~hbramClk
+clkout, 67, 323, -1, ~hbramClk
+clkout, 142, 323, -1, ~hbramClk
+clkout, 143, 323, -1, ~hbramClk
+clkout, 150, 323, -1, ~hbramClk
+clkout, 151, 323, -1, ~hbramClk
+clkout, 158, 323, -1, ~hbramClk
+clkout, 159, 323, -1, ~hbramClk
+clkout, 166, 323, -1, ~hbramClk
+clkout, 167, 323, -1, ~hbramClk
+optional input, 0, 296, 3, __bypass__, clk_27m
+output, 219, 51, 2, __bypass__, csi2_rxc_hs_en_o
+output, 219, 52, 2, __bypass__, csi2_rxc_hs_term_en_o
+input, 219, 163, 1, __bypass__, csi2_rxc_i
+input, 219, 52, 1, __bypass__, csi2_rxc_lp_n_i
+input, 219, 51, 3, __bypass__, csi2_rxc_lp_p_i
+output, 219, 62, 2, __bypass__, csi2_rxd0_hs_en_o
+input, 219, 57, 3, __bypass__, csi2_rxd0_hs_i[0]
+input, 219, 58, 1, __bypass__, csi2_rxd0_hs_i[1]
+input, 219, 58, 3, __bypass__, csi2_rxd0_hs_i[2]
+input, 219, 59, 1, __bypass__, csi2_rxd0_hs_i[3]
+input, 219, 59, 3, __bypass__, csi2_rxd0_hs_i[4]
+input, 219, 60, 1, __bypass__, csi2_rxd0_hs_i[5]
+input, 219, 60, 3, __bypass__, csi2_rxd0_hs_i[6]
+input, 219, 61, 1, __bypass__, csi2_rxd0_hs_i[7]
+output, 219, 63, 2, __bypass__, csi2_rxd0_hs_term_en_o
+input, 219, 63, 1, __bypass__, csi2_rxd0_lp_n_i
+input, 219, 62, 3, __bypass__, csi2_rxd0_lp_p_i
+required output, 219, 65, 2, __bypass__, csi2_rxd0_rst_o
+output, 219, 27, 2, __bypass__, csi2_rxd1_hs_en_o
+input, 219, 22, 3, __bypass__, csi2_rxd1_hs_i[0]
+input, 219, 23, 1, __bypass__, csi2_rxd1_hs_i[1]
+input, 219, 23, 3, __bypass__, csi2_rxd1_hs_i[2]
+input, 219, 24, 1, __bypass__, csi2_rxd1_hs_i[3]
+input, 219, 24, 3, __bypass__, csi2_rxd1_hs_i[4]
+input, 219, 25, 1, __bypass__, csi2_rxd1_hs_i[5]
+input, 219, 25, 3, __bypass__, csi2_rxd1_hs_i[6]
+input, 219, 26, 1, __bypass__, csi2_rxd1_hs_i[7]
+output, 219, 28, 2, __bypass__, csi2_rxd1_hs_term_en_o
+input, 219, 28, 1, __bypass__, csi2_rxd1_lp_n_i
+input, 219, 27, 3, __bypass__, csi2_rxd1_lp_p_i
+required output, 219, 30, 2, __bypass__, csi2_rxd1_rst_o
+output, 219, 38, 2, __bypass__, csi2_rxd2_hs_en_o
+input, 219, 33, 3, __bypass__, csi2_rxd2_hs_i[0]
+input, 219, 34, 1, __bypass__, csi2_rxd2_hs_i[1]
+input, 219, 34, 3, __bypass__, csi2_rxd2_hs_i[2]
+input, 219, 35, 1, __bypass__, csi2_rxd2_hs_i[3]
+input, 219, 35, 3, __bypass__, csi2_rxd2_hs_i[4]
+input, 219, 36, 1, __bypass__, csi2_rxd2_hs_i[5]
+input, 219, 36, 3, __bypass__, csi2_rxd2_hs_i[6]
+input, 219, 37, 1, __bypass__, csi2_rxd2_hs_i[7]
+output, 219, 39, 2, __bypass__, csi2_rxd2_hs_term_en_o
+input, 219, 39, 1, __bypass__, csi2_rxd2_lp_n_i
+input, 219, 38, 3, __bypass__, csi2_rxd2_lp_p_i
+required output, 219, 43, 2, __bypass__, csi2_rxd2_rst_o
+output, 219, 73, 2, __bypass__, csi2_rxd3_hs_en_o
+input, 219, 68, 3, __bypass__, csi2_rxd3_hs_i[0]
+input, 219, 69, 1, __bypass__, csi2_rxd3_hs_i[1]
+input, 219, 69, 3, __bypass__, csi2_rxd3_hs_i[2]
+input, 219, 70, 1, __bypass__, csi2_rxd3_hs_i[3]
+input, 219, 70, 3, __bypass__, csi2_rxd3_hs_i[4]
+input, 219, 71, 1, __bypass__, csi2_rxd3_hs_i[5]
+input, 219, 71, 3, __bypass__, csi2_rxd3_hs_i[6]
+input, 219, 72, 1, __bypass__, csi2_rxd3_hs_i[7]
+output, 219, 74, 2, __bypass__, csi2_rxd3_hs_term_en_o
+input, 219, 74, 1, __bypass__, csi2_rxd3_lp_n_i
+input, 219, 73, 3, __bypass__, csi2_rxd3_lp_p_i
+required output, 219, 76, 2, __bypass__, csi2_rxd3_rst_o
+input, 0, 260, 3, __bypass__, csi2_sda_i
+output, 0, 258, 2, __bypass__, csi2_sda_o
+output, 0, 259, 2, __bypass__, csi2_sda_oe
+output, 219, 173, 0, __bypass__, csi_rxc_hs_en_o
+output, 219, 174, 0, __bypass__, csi_rxc_hs_term_en_o
+input, 219, 162, 1, __bypass__, csi_rxc_i
+input, 219, 173, 3, __bypass__, csi_rxc_lp_n_i
+input, 219, 173, 1, __bypass__, csi_rxc_lp_p_i
+output, 219, 198, 2, __bypass__, csi_rxd0_hs_en_o
+input, 219, 193, 3, __bypass__, csi_rxd0_hs_i[0]
+input, 219, 194, 1, __bypass__, csi_rxd0_hs_i[1]
+input, 219, 194, 3, __bypass__, csi_rxd0_hs_i[2]
+input, 219, 195, 1, __bypass__, csi_rxd0_hs_i[3]
+input, 219, 195, 3, __bypass__, csi_rxd0_hs_i[4]
+input, 219, 196, 1, __bypass__, csi_rxd0_hs_i[5]
+input, 219, 196, 3, __bypass__, csi_rxd0_hs_i[6]
+input, 219, 197, 1, __bypass__, csi_rxd0_hs_i[7]
+output, 219, 199, 2, __bypass__, csi_rxd0_hs_term_en_o
+input, 219, 199, 1, __bypass__, csi_rxd0_lp_n_i
+input, 219, 198, 3, __bypass__, csi_rxd0_lp_p_i
+required output, 219, 203, 2, __bypass__, csi_rxd0_rst_o
+output, 219, 227, 2, __bypass__, csi_rxd1_hs_en_o
+input, 219, 222, 3, __bypass__, csi_rxd1_hs_i[0]
+input, 219, 223, 1, __bypass__, csi_rxd1_hs_i[1]
+input, 219, 223, 3, __bypass__, csi_rxd1_hs_i[2]
+input, 219, 224, 1, __bypass__, csi_rxd1_hs_i[3]
+input, 219, 224, 3, __bypass__, csi_rxd1_hs_i[4]
+input, 219, 225, 1, __bypass__, csi_rxd1_hs_i[5]
+input, 219, 225, 3, __bypass__, csi_rxd1_hs_i[6]
+input, 219, 226, 1, __bypass__, csi_rxd1_hs_i[7]
+output, 219, 228, 2, __bypass__, csi_rxd1_hs_term_en_o
+input, 219, 228, 1, __bypass__, csi_rxd1_lp_n_i
+input, 219, 227, 3, __bypass__, csi_rxd1_lp_p_i
+required output, 219, 230, 2, __bypass__, csi_rxd1_rst_o
+output, 219, 213, 0, __bypass__, csi_rxd2_hs_en_o
+input, 219, 208, 1, __bypass__, csi_rxd2_hs_i[0]
+input, 219, 208, 3, __bypass__, csi_rxd2_hs_i[1]
+input, 219, 209, 1, __bypass__, csi_rxd2_hs_i[2]
+input, 219, 209, 3, __bypass__, csi_rxd2_hs_i[3]
+input, 219, 210, 1, __bypass__, csi_rxd2_hs_i[4]
+input, 219, 210, 3, __bypass__, csi_rxd2_hs_i[5]
+input, 219, 211, 1, __bypass__, csi_rxd2_hs_i[6]
+input, 219, 211, 3, __bypass__, csi_rxd2_hs_i[7]
+output, 219, 214, 0, __bypass__, csi_rxd2_hs_term_en_o
+input, 219, 213, 3, __bypass__, csi_rxd2_lp_n_i
+input, 219, 213, 1, __bypass__, csi_rxd2_lp_p_i
+required output, 219, 216, 0, __bypass__, csi_rxd2_rst_o
+output, 219, 185, 0, __bypass__, csi_rxd3_hs_en_o
+input, 219, 180, 1, __bypass__, csi_rxd3_hs_i[0]
+input, 219, 180, 3, __bypass__, csi_rxd3_hs_i[1]
+input, 219, 181, 1, __bypass__, csi_rxd3_hs_i[2]
+input, 219, 181, 3, __bypass__, csi_rxd3_hs_i[3]
+input, 219, 182, 1, __bypass__, csi_rxd3_hs_i[4]
+input, 219, 182, 3, __bypass__, csi_rxd3_hs_i[5]
+input, 219, 183, 1, __bypass__, csi_rxd3_hs_i[6]
+input, 219, 183, 3, __bypass__, csi_rxd3_hs_i[7]
+output, 219, 186, 0, __bypass__, csi_rxd3_hs_term_en_o
+input, 219, 185, 3, __bypass__, csi_rxd3_lp_n_i
+input, 219, 185, 1, __bypass__, csi_rxd3_lp_p_i
+required output, 219, 188, 0, __bypass__, csi_rxd3_rst_o
+input, 19, 323, 1, __bypass__, csi_trig_i
+output, 15, 323, 0, __bypass__, csi_trig_o
+output, 18, 323, 0, __bypass__, csi_trig_oe
+input, 0, 284, 3, __bypass__, csi_tx_scl_i
+output, 0, 280, 2, __bypass__, csi_tx_scl_o
+output, 0, 283, 2, __bypass__, csi_tx_scl_oe
+input, 0, 284, 1, __bypass__, csi_tx_sda_i
+output, 0, 278, 0, __bypass__, csi_tx_sda_o
+output, 0, 283, 0, __bypass__, csi_tx_sda_oe
+output, 219, 105, 2, __bypass__, csi_txc_hs_o[0]
+output, 219, 108, 0, __bypass__, csi_txc_hs_o[1]
+output, 219, 106, 0, __bypass__, csi_txc_hs_o[2]
+output, 219, 108, 2, __bypass__, csi_txc_hs_o[3]
+output, 219, 106, 2, __bypass__, csi_txc_hs_o[4]
+output, 219, 109, 0, __bypass__, csi_txc_hs_o[5]
+output, 219, 107, 0, __bypass__, csi_txc_hs_o[6]
+output, 219, 109, 2, __bypass__, csi_txc_hs_o[7]
+output, 219, 112, 0, __bypass__, csi_txc_hs_oe
+output, 219, 110, 0, __bypass__, csi_txc_lp_n_o
+output, 219, 111, 0, __bypass__, csi_txc_lp_n_oe
+output, 219, 107, 2, __bypass__, csi_txc_lp_p_o
+output, 219, 110, 2, __bypass__, csi_txc_lp_p_oe
+required output, 219, 115, 2, __bypass__, csi_txc_rst_o
+output, 219, 146, 2, __bypass__, csi_txd0_hs_o[0]
+output, 219, 149, 0, __bypass__, csi_txd0_hs_o[1]
+output, 219, 147, 0, __bypass__, csi_txd0_hs_o[2]
+output, 219, 149, 2, __bypass__, csi_txd0_hs_o[3]
+output, 219, 147, 2, __bypass__, csi_txd0_hs_o[4]
+output, 219, 150, 0, __bypass__, csi_txd0_hs_o[5]
+output, 219, 148, 0, __bypass__, csi_txd0_hs_o[6]
+output, 219, 150, 2, __bypass__, csi_txd0_hs_o[7]
+output, 219, 153, 0, __bypass__, csi_txd0_hs_oe
+input, 219, 153, 1, __bypass__, csi_txd0_lp_n_i
+output, 219, 151, 0, __bypass__, csi_txd0_lp_n_o
+output, 219, 152, 0, __bypass__, csi_txd0_lp_n_oe
+input, 219, 152, 3, __bypass__, csi_txd0_lp_p_i
+output, 219, 148, 2, __bypass__, csi_txd0_lp_p_o
+output, 219, 151, 2, __bypass__, csi_txd0_lp_p_oe
+required output, 219, 156, 2, __bypass__, csi_txd0_rst_o
+output, 219, 135, 0, __bypass__, csi_txd1_hs_o[0]
+output, 219, 137, 2, __bypass__, csi_txd1_hs_o[1]
+output, 219, 135, 2, __bypass__, csi_txd1_hs_o[2]
+output, 219, 138, 0, __bypass__, csi_txd1_hs_o[3]
+output, 219, 136, 0, __bypass__, csi_txd1_hs_o[4]
+output, 219, 138, 2, __bypass__, csi_txd1_hs_o[5]
+output, 219, 136, 2, __bypass__, csi_txd1_hs_o[6]
+output, 219, 139, 0, __bypass__, csi_txd1_hs_o[7]
+output, 219, 141, 2, __bypass__, csi_txd1_hs_oe
+input, 219, 141, 3, __bypass__, csi_txd1_lp_n_i
+output, 219, 139, 2, __bypass__, csi_txd1_lp_n_o
+output, 219, 140, 2, __bypass__, csi_txd1_lp_n_oe
+input, 219, 141, 1, __bypass__, csi_txd1_lp_p_i
+output, 219, 137, 0, __bypass__, csi_txd1_lp_p_o
+output, 219, 140, 0, __bypass__, csi_txd1_lp_p_oe
+required output, 219, 145, 0, __bypass__, csi_txd1_rst_o
+output, 219, 123, 0, __bypass__, csi_txd2_hs_o[0]
+output, 219, 125, 2, __bypass__, csi_txd2_hs_o[1]
+output, 219, 123, 2, __bypass__, csi_txd2_hs_o[2]
+output, 219, 126, 0, __bypass__, csi_txd2_hs_o[3]
+output, 219, 124, 0, __bypass__, csi_txd2_hs_o[4]
+output, 219, 126, 2, __bypass__, csi_txd2_hs_o[5]
+output, 219, 124, 2, __bypass__, csi_txd2_hs_o[6]
+output, 219, 127, 0, __bypass__, csi_txd2_hs_o[7]
+output, 219, 129, 2, __bypass__, csi_txd2_hs_oe
+input, 219, 129, 3, __bypass__, csi_txd2_lp_n_i
+output, 219, 127, 2, __bypass__, csi_txd2_lp_n_o
+output, 219, 128, 2, __bypass__, csi_txd2_lp_n_oe
+input, 219, 129, 1, __bypass__, csi_txd2_lp_p_i
+output, 219, 125, 0, __bypass__, csi_txd2_lp_p_o
+output, 219, 128, 0, __bypass__, csi_txd2_lp_p_oe
+required output, 219, 133, 0, __bypass__, csi_txd2_rst_o
+output, 219, 91, 0, __bypass__, csi_txd3_hs_o[0]
+output, 219, 93, 2, __bypass__, csi_txd3_hs_o[1]
+output, 219, 91, 2, __bypass__, csi_txd3_hs_o[2]
+output, 219, 94, 0, __bypass__, csi_txd3_hs_o[3]
+output, 219, 92, 0, __bypass__, csi_txd3_hs_o[4]
+output, 219, 94, 2, __bypass__, csi_txd3_hs_o[5]
+output, 219, 92, 2, __bypass__, csi_txd3_hs_o[6]
+output, 219, 95, 0, __bypass__, csi_txd3_hs_o[7]
+output, 219, 97, 2, __bypass__, csi_txd3_hs_oe
+input, 219, 97, 3, __bypass__, csi_txd3_lp_n_i
+output, 219, 95, 2, __bypass__, csi_txd3_lp_n_o
+output, 219, 96, 2, __bypass__, csi_txd3_lp_n_oe
+input, 219, 97, 1, __bypass__, csi_txd3_lp_p_i
+output, 219, 93, 0, __bypass__, csi_txd3_lp_p_o
+output, 219, 96, 0, __bypass__, csi_txd3_lp_p_oe
+required output, 219, 101, 0, __bypass__, csi_txd3_rst_o
+input, 219, 11, 1, __bypass__, dsi_pll_lock
+required output, 219, 15, 2, __bypass__, dsi_pll_rstn_o
+output, 0, 256, 0, __bypass__, dsi_pwm_o
+output, 0, 203, 2, __bypass__, dsi_txc_hs_o[0]
+output, 0, 206, 0, __bypass__, dsi_txc_hs_o[1]
+output, 0, 204, 0, __bypass__, dsi_txc_hs_o[2]
+output, 0, 206, 2, __bypass__, dsi_txc_hs_o[3]
+output, 0, 204, 2, __bypass__, dsi_txc_hs_o[4]
+output, 0, 207, 0, __bypass__, dsi_txc_hs_o[5]
+output, 0, 205, 0, __bypass__, dsi_txc_hs_o[6]
+output, 0, 207, 2, __bypass__, dsi_txc_hs_o[7]
+output, 0, 210, 0, __bypass__, dsi_txc_hs_oe
+output, 0, 208, 0, __bypass__, dsi_txc_lp_n_o
+output, 0, 209, 0, __bypass__, dsi_txc_lp_n_oe
+output, 0, 205, 2, __bypass__, dsi_txc_lp_p_o
+output, 0, 208, 2, __bypass__, dsi_txc_lp_p_oe
+required output, 0, 213, 2, __bypass__, dsi_txc_rst_o
+output, 0, 221, 0, __bypass__, dsi_txd0_hs_o[0]
+output, 0, 223, 2, __bypass__, dsi_txd0_hs_o[1]
+output, 0, 221, 2, __bypass__, dsi_txd0_hs_o[2]
+output, 0, 224, 0, __bypass__, dsi_txd0_hs_o[3]
+output, 0, 222, 0, __bypass__, dsi_txd0_hs_o[4]
+output, 0, 224, 2, __bypass__, dsi_txd0_hs_o[5]
+output, 0, 222, 2, __bypass__, dsi_txd0_hs_o[6]
+output, 0, 225, 0, __bypass__, dsi_txd0_hs_o[7]
+output, 0, 227, 2, __bypass__, dsi_txd0_hs_oe
+input, 0, 227, 3, __bypass__, dsi_txd0_lp_n_i
+output, 0, 225, 2, __bypass__, dsi_txd0_lp_n_o
+output, 0, 226, 2, __bypass__, dsi_txd0_lp_n_oe
+input, 0, 227, 1, __bypass__, dsi_txd0_lp_p_i
+output, 0, 223, 0, __bypass__, dsi_txd0_lp_p_o
+output, 0, 226, 0, __bypass__, dsi_txd0_lp_p_oe
+required output, 0, 231, 0, __bypass__, dsi_txd0_rst_o
+output, 0, 167, 0, __bypass__, dsi_txd1_hs_o[0]
+output, 0, 169, 2, __bypass__, dsi_txd1_hs_o[1]
+output, 0, 167, 2, __bypass__, dsi_txd1_hs_o[2]
+output, 0, 170, 0, __bypass__, dsi_txd1_hs_o[3]
+output, 0, 168, 0, __bypass__, dsi_txd1_hs_o[4]
+output, 0, 170, 2, __bypass__, dsi_txd1_hs_o[5]
+output, 0, 168, 2, __bypass__, dsi_txd1_hs_o[6]
+output, 0, 171, 0, __bypass__, dsi_txd1_hs_o[7]
+output, 0, 173, 2, __bypass__, dsi_txd1_hs_oe
+input, 0, 173, 3, __bypass__, dsi_txd1_lp_n_i
+output, 0, 171, 2, __bypass__, dsi_txd1_lp_n_o
+output, 0, 172, 2, __bypass__, dsi_txd1_lp_n_oe
+input, 0, 173, 1, __bypass__, dsi_txd1_lp_p_i
+output, 0, 169, 0, __bypass__, dsi_txd1_lp_p_o
+output, 0, 172, 0, __bypass__, dsi_txd1_lp_p_oe
+required output, 0, 177, 0, __bypass__, dsi_txd1_rst_o
+output, 0, 178, 2, __bypass__, dsi_txd2_hs_o[0]
+output, 0, 181, 0, __bypass__, dsi_txd2_hs_o[1]
+output, 0, 179, 0, __bypass__, dsi_txd2_hs_o[2]
+output, 0, 181, 2, __bypass__, dsi_txd2_hs_o[3]
+output, 0, 179, 2, __bypass__, dsi_txd2_hs_o[4]
+output, 0, 182, 0, __bypass__, dsi_txd2_hs_o[5]
+output, 0, 180, 0, __bypass__, dsi_txd2_hs_o[6]
+output, 0, 182, 2, __bypass__, dsi_txd2_hs_o[7]
+output, 0, 185, 0, __bypass__, dsi_txd2_hs_oe
+input, 0, 185, 1, __bypass__, dsi_txd2_lp_n_i
+output, 0, 183, 0, __bypass__, dsi_txd2_lp_n_o
+output, 0, 184, 0, __bypass__, dsi_txd2_lp_n_oe
+input, 0, 184, 3, __bypass__, dsi_txd2_lp_p_i
+output, 0, 180, 2, __bypass__, dsi_txd2_lp_p_o
+output, 0, 183, 2, __bypass__, dsi_txd2_lp_p_oe
+required output, 0, 188, 2, __bypass__, dsi_txd2_rst_o
+output, 0, 190, 2, __bypass__, dsi_txd3_hs_o[0]
+output, 0, 193, 0, __bypass__, dsi_txd3_hs_o[1]
+output, 0, 191, 0, __bypass__, dsi_txd3_hs_o[2]
+output, 0, 193, 2, __bypass__, dsi_txd3_hs_o[3]
+output, 0, 191, 2, __bypass__, dsi_txd3_hs_o[4]
+output, 0, 194, 0, __bypass__, dsi_txd3_hs_o[5]
+output, 0, 192, 0, __bypass__, dsi_txd3_hs_o[6]
+output, 0, 194, 2, __bypass__, dsi_txd3_hs_o[7]
+output, 0, 197, 0, __bypass__, dsi_txd3_hs_oe
+input, 0, 197, 1, __bypass__, dsi_txd3_lp_n_i
+output, 0, 195, 0, __bypass__, dsi_txd3_lp_n_o
+output, 0, 196, 0, __bypass__, dsi_txd3_lp_n_oe
+input, 0, 196, 3, __bypass__, dsi_txd3_lp_p_i
+output, 0, 192, 2, __bypass__, dsi_txd3_lp_p_o
+output, 0, 195, 2, __bypass__, dsi_txd3_lp_p_oe
+required output, 0, 200, 2, __bypass__, dsi_txd3_rst_o
+output, 82, 323, 0, __bypass__, hbram_CK_N_HI
+output, 81, 323, 2, __bypass__, hbram_CK_N_LO
+output, 73, 323, 2, __bypass__, hbram_CK_P_HI
+output, 72, 323, 2, __bypass__, hbram_CK_P_LO
+output, 121, 323, 0, __bypass__, hbram_CS_N
+input, 179, 323, 3, __bypass__, hbram_DQ_IN_HI[0]
+input, 179, 323, 1, __bypass__, hbram_DQ_IN_HI[1]
+input, 168, 323, 3, __bypass__, hbram_DQ_IN_HI[2]
+input, 168, 323, 1, __bypass__, hbram_DQ_IN_HI[3]
+input, 157, 323, 3, __bypass__, hbram_DQ_IN_HI[4]
+input, 157, 323, 1, __bypass__, hbram_DQ_IN_HI[5]
+input, 146, 323, 3, __bypass__, hbram_DQ_IN_HI[6]
+input, 146, 323, 1, __bypass__, hbram_DQ_IN_HI[7]
+input, 64, 323, 3, __bypass__, hbram_DQ_IN_HI[8]
+input, 64, 323, 1, __bypass__, hbram_DQ_IN_HI[9]
+input, 53, 323, 3, __bypass__, hbram_DQ_IN_HI[10]
+input, 53, 323, 1, __bypass__, hbram_DQ_IN_HI[11]
+input, 42, 323, 3, __bypass__, hbram_DQ_IN_HI[12]
+input, 42, 323, 1, __bypass__, hbram_DQ_IN_HI[13]
+input, 8, 323, 3, __bypass__, hbram_DQ_IN_HI[14]
+input, 8, 323, 1, __bypass__, hbram_DQ_IN_HI[15]
+input, 178, 323, 3, __bypass__, hbram_DQ_IN_LO[0]
+input, 178, 323, 1, __bypass__, hbram_DQ_IN_LO[1]
+input, 167, 323, 3, __bypass__, hbram_DQ_IN_LO[2]
+input, 167, 323, 1, __bypass__, hbram_DQ_IN_LO[3]
+input, 156, 323, 3, __bypass__, hbram_DQ_IN_LO[4]
+input, 156, 323, 1, __bypass__, hbram_DQ_IN_LO[5]
+input, 145, 323, 3, __bypass__, hbram_DQ_IN_LO[6]
+input, 145, 323, 1, __bypass__, hbram_DQ_IN_LO[7]
+input, 63, 323, 3, __bypass__, hbram_DQ_IN_LO[8]
+input, 63, 323, 1, __bypass__, hbram_DQ_IN_LO[9]
+input, 52, 323, 3, __bypass__, hbram_DQ_IN_LO[10]
+input, 52, 323, 1, __bypass__, hbram_DQ_IN_LO[11]
+input, 41, 323, 3, __bypass__, hbram_DQ_IN_LO[12]
+input, 41, 323, 1, __bypass__, hbram_DQ_IN_LO[13]
+input, 7, 323, 3, __bypass__, hbram_DQ_IN_LO[14]
+input, 7, 323, 1, __bypass__, hbram_DQ_IN_LO[15]
+output, 178, 323, 2, __bypass__, hbram_DQ_OE[0]
+output, 178, 323, 0, __bypass__, hbram_DQ_OE[1]
+output, 167, 323, 2, __bypass__, hbram_DQ_OE[2]
+output, 167, 323, 0, __bypass__, hbram_DQ_OE[3]
+output, 156, 323, 2, __bypass__, hbram_DQ_OE[4]
+output, 156, 323, 0, __bypass__, hbram_DQ_OE[5]
+output, 145, 323, 2, __bypass__, hbram_DQ_OE[6]
+output, 145, 323, 0, __bypass__, hbram_DQ_OE[7]
+output, 63, 323, 2, __bypass__, hbram_DQ_OE[8]
+output, 63, 323, 0, __bypass__, hbram_DQ_OE[9]
+output, 52, 323, 2, __bypass__, hbram_DQ_OE[10]
+output, 52, 323, 0, __bypass__, hbram_DQ_OE[11]
+output, 41, 323, 2, __bypass__, hbram_DQ_OE[12]
+output, 41, 323, 0, __bypass__, hbram_DQ_OE[13]
+output, 7, 323, 2, __bypass__, hbram_DQ_OE[14]
+output, 7, 323, 0, __bypass__, hbram_DQ_OE[15]
+output, 177, 323, 2, __bypass__, hbram_DQ_OUT_HI[0]
+output, 175, 323, 0, __bypass__, hbram_DQ_OUT_HI[1]
+output, 166, 323, 2, __bypass__, hbram_DQ_OUT_HI[2]
+output, 164, 323, 0, __bypass__, hbram_DQ_OUT_HI[3]
+output, 155, 323, 2, __bypass__, hbram_DQ_OUT_HI[4]
+output, 153, 323, 0, __bypass__, hbram_DQ_OUT_HI[5]
+output, 144, 323, 2, __bypass__, hbram_DQ_OUT_HI[6]
+output, 142, 323, 0, __bypass__, hbram_DQ_OUT_HI[7]
+output, 62, 323, 2, __bypass__, hbram_DQ_OUT_HI[8]
+output, 60, 323, 0, __bypass__, hbram_DQ_OUT_HI[9]
+output, 51, 323, 2, __bypass__, hbram_DQ_OUT_HI[10]
+output, 49, 323, 0, __bypass__, hbram_DQ_OUT_HI[11]
+output, 40, 323, 2, __bypass__, hbram_DQ_OUT_HI[12]
+output, 38, 323, 0, __bypass__, hbram_DQ_OUT_HI[13]
+output, 6, 323, 2, __bypass__, hbram_DQ_OUT_HI[14]
+output, 4, 323, 0, __bypass__, hbram_DQ_OUT_HI[15]
+output, 176, 323, 2, __bypass__, hbram_DQ_OUT_LO[0]
+output, 174, 323, 2, __bypass__, hbram_DQ_OUT_LO[1]
+output, 165, 323, 2, __bypass__, hbram_DQ_OUT_LO[2]
+output, 163, 323, 2, __bypass__, hbram_DQ_OUT_LO[3]
+output, 154, 323, 2, __bypass__, hbram_DQ_OUT_LO[4]
+output, 152, 323, 2, __bypass__, hbram_DQ_OUT_LO[5]
+output, 143, 323, 2, __bypass__, hbram_DQ_OUT_LO[6]
+output, 141, 323, 2, __bypass__, hbram_DQ_OUT_LO[7]
+output, 61, 323, 2, __bypass__, hbram_DQ_OUT_LO[8]
+output, 59, 323, 2, __bypass__, hbram_DQ_OUT_LO[9]
+output, 50, 323, 2, __bypass__, hbram_DQ_OUT_LO[10]
+output, 48, 323, 2, __bypass__, hbram_DQ_OUT_LO[11]
+output, 39, 323, 2, __bypass__, hbram_DQ_OUT_LO[12]
+output, 37, 323, 2, __bypass__, hbram_DQ_OUT_LO[13]
+output, 5, 323, 2, __bypass__, hbram_DQ_OUT_LO[14]
+output, 3, 323, 2, __bypass__, hbram_DQ_OUT_LO[15]
+output, 198, 323, 0, __bypass__, hbram_RST_N
+input, 135, 323, 1, __bypass__, hbram_RWDS_IN_HI[0]
+input, 75, 323, 1, __bypass__, hbram_RWDS_IN_HI[1]
+input, 134, 323, 1, __bypass__, hbram_RWDS_IN_LO[0]
+input, 74, 323, 1, __bypass__, hbram_RWDS_IN_LO[1]
+output, 134, 323, 2, __bypass__, hbram_RWDS_OE[0]
+output, 74, 323, 0, __bypass__, hbram_RWDS_OE[1]
+output, 131, 323, 2, __bypass__, hbram_RWDS_OUT_HI[0]
+output, 71, 323, 0, __bypass__, hbram_RWDS_OUT_HI[1]
+output, 131, 323, 0, __bypass__, hbram_RWDS_OUT_LO[0]
+output, 70, 323, 2, __bypass__, hbram_RWDS_OUT_LO[1]
+input, 219, 312, 1, __bypass__, hbramClk_pll_lock
+required output, 219, 302, 2, __bypass__, hbramClk_pll_rstn_o
+output, 219, 303, 0, __bypass__, hbramClk_shift[0]
+output, 219, 303, 2, __bypass__, hbramClk_shift[1]
+output, 219, 304, 0, __bypass__, hbramClk_shift[2]
+output, 219, 307, 0, __bypass__, hbramClk_shift_ena
+output, 219, 304, 2, __bypass__, hbramClk_shift_sel[0]
+output, 219, 305, 0, __bypass__, hbramClk_shift_sel[1]
+output, 219, 305, 2, __bypass__, hbramClk_shift_sel[2]
+output, 219, 306, 0, __bypass__, hbramClk_shift_sel[3]
+output, 219, 306, 2, __bypass__, hbramClk_shift_sel[4]
+input, 0, 312, 1, __bypass__, hdmi_pll_lock
+required output, 0, 302, 2, __bypass__, hdmi_pll_rstn_o
+output, 0, 110, 2, __bypass__, hdmi_txc_o[0]
+output, 0, 111, 0, __bypass__, hdmi_txc_o[1]
+output, 0, 111, 2, __bypass__, hdmi_txc_o[2]
+output, 0, 112, 0, __bypass__, hdmi_txc_o[3]
+output, 0, 112, 2, __bypass__, hdmi_txc_o[4]
+output, 0, 113, 0, __bypass__, hdmi_txc_o[5]
+output, 0, 113, 2, __bypass__, hdmi_txc_o[6]
+output, 0, 114, 0, __bypass__, hdmi_txc_o[7]
+output, 0, 114, 2, __bypass__, hdmi_txc_o[8]
+output, 0, 115, 0, __bypass__, hdmi_txc_o[9]
+required output, 0, 117, 0, __bypass__, hdmi_txc_oe
+required output, 0, 120, 2, __bypass__, hdmi_txc_rst_o
+output, 0, 94, 2, __bypass__, hdmi_txd0_o[0]
+output, 0, 95, 0, __bypass__, hdmi_txd0_o[1]
+output, 0, 95, 2, __bypass__, hdmi_txd0_o[2]
+output, 0, 96, 0, __bypass__, hdmi_txd0_o[3]
+output, 0, 96, 2, __bypass__, hdmi_txd0_o[4]
+output, 0, 97, 0, __bypass__, hdmi_txd0_o[5]
+output, 0, 97, 2, __bypass__, hdmi_txd0_o[6]
+output, 0, 98, 0, __bypass__, hdmi_txd0_o[7]
+output, 0, 98, 2, __bypass__, hdmi_txd0_o[8]
+output, 0, 99, 0, __bypass__, hdmi_txd0_o[9]
+required output, 0, 101, 0, __bypass__, hdmi_txd0_oe
+required output, 0, 104, 2, __bypass__, hdmi_txd0_rst_o
+output, 0, 128, 0, __bypass__, hdmi_txd1_o[0]
+output, 0, 128, 2, __bypass__, hdmi_txd1_o[1]
+output, 0, 129, 0, __bypass__, hdmi_txd1_o[2]
+output, 0, 129, 2, __bypass__, hdmi_txd1_o[3]
+output, 0, 130, 0, __bypass__, hdmi_txd1_o[4]
+output, 0, 130, 2, __bypass__, hdmi_txd1_o[5]
+output, 0, 131, 0, __bypass__, hdmi_txd1_o[6]
+output, 0, 131, 2, __bypass__, hdmi_txd1_o[7]
+output, 0, 132, 0, __bypass__, hdmi_txd1_o[8]
+output, 0, 132, 2, __bypass__, hdmi_txd1_o[9]
+required output, 0, 134, 2, __bypass__, hdmi_txd1_oe
+required output, 0, 138, 0, __bypass__, hdmi_txd1_rst_o
+output, 0, 144, 0, __bypass__, hdmi_txd2_o[0]
+output, 0, 144, 2, __bypass__, hdmi_txd2_o[1]
+output, 0, 145, 0, __bypass__, hdmi_txd2_o[2]
+output, 0, 145, 2, __bypass__, hdmi_txd2_o[3]
+output, 0, 146, 0, __bypass__, hdmi_txd2_o[4]
+output, 0, 146, 2, __bypass__, hdmi_txd2_o[5]
+output, 0, 147, 0, __bypass__, hdmi_txd2_o[6]
+output, 0, 147, 2, __bypass__, hdmi_txd2_o[7]
+output, 0, 148, 0, __bypass__, hdmi_txd2_o[8]
+output, 0, 148, 2, __bypass__, hdmi_txd2_o[9]
+required output, 0, 150, 2, __bypass__, hdmi_txd2_oe
+required output, 0, 154, 0, __bypass__, hdmi_txd2_rst_o
+output, 0, 294, 2, __bypass__, led_o
+output, 0, 30, 0, __bypass__, spi_cs_o
+output, 0, 33, 0, __bypass__, spi_cs_oe
+input, 0, 75, 3, __bypass__, spi_holdn_d3_i
+output, 0, 73, 2, __bypass__, spi_holdn_d3_o
+output, 0, 74, 2, __bypass__, spi_holdn_d3_oe
+input, 0, 65, 1, __bypass__, spi_miso_d1_i
+output, 0, 62, 2, __bypass__, spi_miso_d1_o
+output, 0, 63, 2, __bypass__, spi_miso_d1_oe
+input, 0, 64, 3, __bypass__, spi_mosi_d0_i
+output, 0, 60, 0, __bypass__, spi_mosi_d0_o
+output, 0, 63, 0, __bypass__, spi_mosi_d0_oe
+output, 0, 32, 2, __bypass__, spi_sck_o
+output, 0, 33, 2, __bypass__, spi_sck_oe
+input, 0, 75, 1, __bypass__, spi_wpn_d2_i
+output, 0, 71, 0, __bypass__, spi_wpn_d2_o
+output, 0, 74, 0, __bypass__, spi_wpn_d2_oe
+input, 219, 298, 3, __bypass__, uart_rx_i
+output, 219, 294, 0, __bypass__, uart_tx_o
+input, 111, 0, 1, __bypass__, ~dsi_byteclk_i
+input, 112, 0, 1, __bypass__, ~dsi_fb_i
+input, 110, 0, 1, __bypass__, ~dsi_serclk_i
+input, 107, 0, 1, __bypass__, ~dsi_txcclk_i
+input, 219, 159, 1, __bypass__, ~hbramClk90
+input, 110, 323, 1, __bypass__, ~hbramClk
+input, 111, 323, 1, __bypass__, ~hbramClk_Cal
+input, 0, 159, 1, __bypass__, ~hdmi_pixel
+input, 0, 162, 1, __bypass__, ~hdmi_pixel_10x
+input, 0, 163, 1, __bypass__, ~sensor_xclk_i
+input, 0, 164, 1, __bypass__, ~sys_clk_i

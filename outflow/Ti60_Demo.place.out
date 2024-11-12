@@ -1,0 +1,608 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2023.2.307 
+Compiled: Dec 15 2023.
+
+Copyright (C) 2013 - 2023 Efinix, Inc. All rights reserved.
+
+
+The Tool Is Based on VPR of University of Toronto,
+a free open source code under MIT license.
+
+
+Running Placement and Routing for Family "Titanium", Device "Ti60F100S3F2" ...
+
+***** Beginning stage netlist pre-processing ... *****
+Successfully Read in Verific binary Netlist dump file "C:/Users/pc/Desktop/file/eye/outflow/Ti60_Demo.vdb".
+***** Beginning VDB Netlist Checker ... *****
+VDB Netlist Checker took 0.218419 seconds.
+	VDB Netlist Checker took 0.0625 seconds (approximately) in total CPU time.
+VDB Netlist Checker virtual memory usage: begin = 79.508 MB, end = 79.508 MB, delta = 0 MB
+	VDB Netlist Checker peak virtual memory usage = 82.08 MB
+VDB Netlist Checker resident set memory usage: begin = 89.332 MB, end = 89.612 MB, delta = 0.28 MB
+	VDB Netlist Checker peak resident set memory usage = 91.396 MB
+***** Ending VDB Netlist Checker ... *****
+Reading core interface constraints from 'C:/Users/pc/Desktop/file/eye/outflow/Ti60_Demo.interface.csv'.
+Successfully processed interface constraints file "C:/Users/pc/Desktop/file/eye/outflow/Ti60_Demo.interface.csv".
+Found 0 constant generator nets.
+Pass 0: Swept away 0 nets with no fanout.
+logical_block #33(spi_mosi_d0_i) has no fanout.
+Removing input.
+logical_block #36(spi_miso_d1_i) has no fanout.
+Removing input.
+logical_block #39(spi_wpn_d2_i) has no fanout.
+Removing input.
+logical_block #42(spi_holdn_d3_i) has no fanout.
+Removing input.
+logical_block #45(csi_trig_i) has no fanout.
+Removing input.
+logical_block #48(csi2_sda_i) has no fanout.
+Removing input.
+logical_block #108(csi2_rxc_lp_p_i) has no fanout.
+Removing input.
+logical_block #109(csi2_rxc_lp_n_i) has no fanout.
+Removing input.
+logical_block #112(csi2_rxc_i) has no fanout.
+Removing input.
+logical_block #116(csi2_rxd0_lp_p_i) has no fanout.
+Removing input.
+logical_block #117(csi2_rxd0_lp_n_i) has no fanout.
+Removing input.
+logical_block #118(csi2_rxd0_hs_i[7]) has no fanout.
+Removing input.
+logical_block #119(csi2_rxd0_hs_i[6]) has no fanout.
+Removing input.
+logical_block #120(csi2_rxd0_hs_i[5]) has no fanout.
+Removing input.
+logical_block #121(csi2_rxd0_hs_i[4]) has no fanout.
+Removing input.
+logical_block #122(csi2_rxd0_hs_i[3]) has no fanout.
+Removing input.
+logical_block #123(csi2_rxd0_hs_i[2]) has no fanout.
+Removing input.
+logical_block #124(csi2_rxd0_hs_i[1]) has no fanout.
+Removing input.
+logical_block #125(csi2_rxd0_hs_i[0]) has no fanout.
+Removing input.
+logical_block #129(csi2_rxd1_lp_p_i) has no fanout.
+Removing input.
+logical_block #130(csi2_rxd1_lp_n_i) has no fanout.
+Removing input.
+logical_block #131(csi2_rxd1_hs_i[7]) has no fanout.
+Removing input.
+logical_block #132(csi2_rxd1_hs_i[6]) has no fanout.
+Removing input.
+logical_block #133(csi2_rxd1_hs_i[5]) has no fanout.
+Removing input.
+logical_block #134(csi2_rxd1_hs_i[4]) has no fanout.
+Removing input.
+logical_block #135(csi2_rxd1_hs_i[3]) has no fanout.
+Removing input.
+logical_block #136(csi2_rxd1_hs_i[2]) has no fanout.
+Removing input.
+logical_block #137(csi2_rxd1_hs_i[1]) has no fanout.
+Removing input.
+logical_block #138(csi2_rxd1_hs_i[0]) has no fanout.
+Removing input.
+logical_block #142(csi2_rxd2_lp_p_i) has no fanout.
+Removing input.
+logical_block #143(csi2_rxd2_lp_n_i) has no fanout.
+Removing input.
+logical_block #144(csi2_rxd2_hs_i[7]) has no fanout.
+Removing input.
+logical_block #145(csi2_rxd2_hs_i[6]) has no fanout.
+Removing input.
+logical_block #146(csi2_rxd2_hs_i[5]) has no fanout.
+Removing input.
+logical_block #147(csi2_rxd2_hs_i[4]) has no fanout.
+Removing input.
+logical_block #148(csi2_rxd2_hs_i[3]) has no fanout.
+Removing input.
+logical_block #149(csi2_rxd2_hs_i[2]) has no fanout.
+Removing input.
+logical_block #150(csi2_rxd2_hs_i[1]) has no fanout.
+Removing input.
+logical_block #151(csi2_rxd2_hs_i[0]) has no fanout.
+Removing input.
+logical_block #155(csi2_rxd3_lp_p_i) has no fanout.
+Removing input.
+logical_block #156(csi2_rxd3_lp_n_i) has no fanout.
+Removing input.
+logical_block #157(csi2_rxd3_hs_i[7]) has no fanout.
+Removing input.
+logical_block #158(csi2_rxd3_hs_i[6]) has no fanout.
+Removing input.
+logical_block #159(csi2_rxd3_hs_i[5]) has no fanout.
+Removing input.
+logical_block #160(csi2_rxd3_hs_i[4]) has no fanout.
+Removing input.
+logical_block #161(csi2_rxd3_hs_i[3]) has no fanout.
+Removing input.
+logical_block #162(csi2_rxd3_hs_i[2]) has no fanout.
+Removing input.
+logical_block #163(csi2_rxd3_hs_i[1]) has no fanout.
+Removing input.
+logical_block #164(csi2_rxd3_hs_i[0]) has no fanout.
+Removing input.
+logical_block #236(dsi_txd0_lp_p_i) has no fanout.
+Removing input.
+logical_block #237(dsi_txd0_lp_n_i) has no fanout.
+Removing input.
+logical_block #238(dsi_txd1_lp_p_i) has no fanout.
+Removing input.
+logical_block #239(dsi_txd1_lp_n_i) has no fanout.
+Removing input.
+logical_block #240(dsi_txd2_lp_p_i) has no fanout.
+Removing input.
+logical_block #241(dsi_txd2_lp_n_i) has no fanout.
+Removing input.
+logical_block #242(dsi_txd3_lp_p_i) has no fanout.
+Removing input.
+logical_block #243(dsi_txd3_lp_n_i) has no fanout.
+Removing input.
+logical_block #244(csi_tx_scl_i) has no fanout.
+Removing input.
+logical_block #247(csi_tx_sda_i) has no fanout.
+Removing input.
+logical_block #320(csi_txd0_lp_p_i) has no fanout.
+Removing input.
+logical_block #321(csi_txd0_lp_n_i) has no fanout.
+Removing input.
+logical_block #322(csi_txd1_lp_p_i) has no fanout.
+Removing input.
+logical_block #323(csi_txd1_lp_n_i) has no fanout.
+Removing input.
+logical_block #324(csi_txd2_lp_p_i) has no fanout.
+Removing input.
+logical_block #325(csi_txd2_lp_n_i) has no fanout.
+Removing input.
+logical_block #326(csi_txd3_lp_p_i) has no fanout.
+Removing input.
+logical_block #327(csi_txd3_lp_n_i) has no fanout.
+Removing input.
+Pass 0: Swept away 67 blocks with no fanout.
+Pass 1: Swept away 0 nets with no fanout.
+Pass 1: Swept away 0 blocks with no fanout.
+Swept away 0 nets and 67 blocks in total.
+Removed 0 LUT buffers.
+Sweeped away 67 nodes.
+Successfully created VPR logical netlist from Verific binary DataBase file "C:/Users/pc/Desktop/file/eye/outflow/Ti60_Demo.vdb".
+Netlist pre-processing took 0.576924 seconds.
+	Netlist pre-processing took 0.171875 seconds (approximately) in total CPU time.
+Netlist pre-processing virtual memory usage: begin = 24.164 MB, end = 126.176 MB, delta = 102.012 MB
+	Netlist pre-processing peak virtual memory usage = 130.352 MB
+Netlist pre-processing resident set memory usage: begin = 35.66 MB, end = 134.892 MB, delta = 99.232 MB
+	Netlist pre-processing peak resident set memory usage = 138.988 MB
+***** Ending stage netlist pre-processing *****
+
+Load Global Network took 0.615823 seconds.
+	Load Global Network took 0.1875 seconds (approximately) in total CPU time.
+Load Global Network virtual memory usage: begin = 77.84 MB, end = 165.212 MB, delta = 87.372 MB
+	Load Global Network peak virtual memory usage = 214.152 MB
+Load Global Network resident set memory usage: begin = 87.216 MB, end = 156.224 MB, delta = 69.008 MB
+	Load Global Network peak resident set memory usage = 205.884 MB
+Reading D:/app/efinity/arch/.\rr_pb_hier_mapping.xml
+***** Beginning stage pre-packing ... *****
+***** Ending stage pre-packing *****
+
+***** Beginning stage packing ... *****
+Generate proto netlist for file "C:/Users/pc/Desktop/file/eye/work_pnr\Ti60_Demo.net_proto" took 0.105 seconds
+Creating IO constraints file 'C:/Users/pc/Desktop/file/eye/work_pnr\Ti60_Demo.io_place'
+Packing took 0.244539 seconds.
+	Packing took 0.125 seconds (approximately) in total CPU time.
+Packing virtual memory usage: begin = 208.22 MB, end = 230.392 MB, delta = 22.172 MB
+	Packing peak virtual memory usage = 232.792 MB
+Packing resident set memory usage: begin = 197.94 MB, end = 219.556 MB, delta = 21.616 MB
+	Packing peak resident set memory usage = 221.556 MB
+***** Ending stage packing *****
+
+***** Beginning stage packed netlist loading ... *****
+Read proto netlist file C:/Users/pc/Desktop/file/eye/work_pnr\Ti60_Demo.net_proto
+Read proto netlist for file "C:/Users/pc/Desktop/file/eye/work_pnr\Ti60_Demo.net_proto" took 0.064 seconds
+Setup net and block data structure took 0.401 seconds
+Reading core interface constraints from 'C:/Users/pc/Desktop/file/eye/outflow/Ti60_Demo.interface.csv'.
+Successfully processed interface constraints file "C:/Users/pc/Desktop/file/eye/outflow/Ti60_Demo.interface.csv".
+Counting 1 clocks that are not assigned to clock resources as global clocks.
+Packed netlist loading took 3.3669 seconds.
+	Packed netlist loading took 2.14062 seconds (approximately) in total CPU time.
+Packed netlist loading virtual memory usage: begin = 230.392 MB, end = 417.44 MB, delta = 187.048 MB
+	Packed netlist loading peak virtual memory usage = 456.616 MB
+Packed netlist loading resident set memory usage: begin = 219.564 MB, end = 399.608 MB, delta = 180.044 MB
+	Packed netlist loading peak resident set memory usage = 438.652 MB
+***** Ending stage packed netlist loading *****
+
+***** Beginning stage pre-placement ... *****
+
+***** Ending stage pre-placement *****
+
+Read router lookahead for device Ti60F100S3F2 from file D:/app/efinity/arch/./troute/timing/titanium/lookahead/C4.lookahead.zst.
+
+Load Router Lookahead took 0.0462665 seconds.
+	Load Router Lookahead took 0 seconds (approximately) in total CPU time.
+Load Router Lookahead virtual memory usage: begin = 461.144 MB, end = 467.436 MB, delta = 6.292 MB
+	Load Router Lookahead peak virtual memory usage = 495.184 MB
+Load Router Lookahead resident set memory usage: begin = 441.976 MB, end = 448.884 MB, delta = 6.908 MB
+	Load Router Lookahead peak resident set memory usage = 476.572 MB
+WARNING(1): No ports matched 'csi2_rxc_i'
+WARNING(2): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:27] No valid object(s) found for ''
+WARNING(3): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:27] No valid pin(s) found for clock
+WARNING(4): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:27] Unable to run 'create_clock' constraint due to warnings found
+WARNING(5): No clocks matched 'csi2_rxc_i'
+WARNING(6): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:34] No valid object(s) found for ''
+WARNING(7): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:34] set_false_path: Object(s) specified for -to option contains no vaild endpoints
+WARNING(8): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:34] Unable to run 'set_false_path' constraint due to warnings found
+WARNING(9): No clocks matched 'csi2_rxc_i'
+WARNING(10): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:39] No valid object(s) found for ''
+WARNING(11): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:39] set_false_path: Object(s) specified for -from option contains no vaild startpoints
+WARNING(12): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:39] Unable to run 'set_false_path' constraint due to warnings found
+WARNING(13): No clocks matched 'csi2_rxc_i'
+WARNING(14): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:42] No valid object(s) found for ''
+WARNING(15): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:42] set_false_path: Object(s) specified for -from option contains no vaild startpoints
+WARNING(16): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:42] Unable to run 'set_false_path' constraint due to warnings found
+WARNING(17): No clocks matched 'csi2_rxc_i'
+WARNING(18): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:44] No valid object(s) found for ''
+WARNING(19): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:44] set_false_path: Object(s) specified for -to option contains no vaild endpoints
+WARNING(20): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:44] Unable to run 'set_false_path' constraint due to warnings found
+WARNING(21): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:116] No clocks matched 'csi2_rxc_i'
+WARNING(22): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:116] set_output_delay: No valid clock found for -clock
+WARNING(23): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:116] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(24): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:117] No clocks matched 'csi2_rxc_i'
+WARNING(25): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:117] set_output_delay: No valid clock found for -clock
+WARNING(26): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:117] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(27): No ports matched 'csi2_rxd0_hs_i[*]'
+WARNING(28): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:118] No clocks matched 'csi2_rxc_i'
+WARNING(29): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:118] set_input_delay: No valid clock found for -clock
+WARNING(30): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:118] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(31): No ports matched 'csi2_rxd0_hs_i[*]'
+WARNING(32): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:119] No clocks matched 'csi2_rxc_i'
+WARNING(33): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:119] set_input_delay: No valid clock found for -clock
+WARNING(34): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:119] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(35): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:120] No clocks matched 'csi2_rxc_i'
+WARNING(36): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:120] set_output_delay: No valid clock found for -clock
+WARNING(37): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:120] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(38): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:121] No clocks matched 'csi2_rxc_i'
+WARNING(39): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:121] set_output_delay: No valid clock found for -clock
+WARNING(40): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:121] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(41): No ports matched 'csi2_rxd1_hs_i[*]'
+WARNING(42): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:122] No clocks matched 'csi2_rxc_i'
+WARNING(43): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:122] set_input_delay: No valid clock found for -clock
+WARNING(44): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:122] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(45): No ports matched 'csi2_rxd1_hs_i[*]'
+WARNING(46): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:123] No clocks matched 'csi2_rxc_i'
+WARNING(47): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:123] set_input_delay: No valid clock found for -clock
+WARNING(48): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:123] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(49): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:124] No clocks matched 'csi2_rxc_i'
+WARNING(50): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:124] set_output_delay: No valid clock found for -clock
+WARNING(51): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:124] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(52): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:125] No clocks matched 'csi2_rxc_i'
+WARNING(53): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:125] set_output_delay: No valid clock found for -clock
+WARNING(54): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:125] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(55): No ports matched 'csi2_rxd2_hs_i[*]'
+WARNING(56): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:126] No clocks matched 'csi2_rxc_i'
+WARNING(57): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:126] set_input_delay: No valid clock found for -clock
+WARNING(58): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:126] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(59): No ports matched 'csi2_rxd2_hs_i[*]'
+WARNING(60): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:127] No clocks matched 'csi2_rxc_i'
+WARNING(61): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:127] set_input_delay: No valid clock found for -clock
+WARNING(62): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:127] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(63): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:128] No clocks matched 'csi2_rxc_i'
+WARNING(64): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:128] set_output_delay: No valid clock found for -clock
+WARNING(65): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:128] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(66): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:129] No clocks matched 'csi2_rxc_i'
+WARNING(67): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:129] set_output_delay: No valid clock found for -clock
+WARNING(68): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:129] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(69): No ports matched 'csi2_rxd3_hs_i[*]'
+WARNING(70): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:130] No clocks matched 'csi2_rxc_i'
+WARNING(71): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:130] set_input_delay: No valid clock found for -clock
+WARNING(72): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:130] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(73): No ports matched 'csi2_rxd3_hs_i[*]'
+WARNING(74): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:131] No clocks matched 'csi2_rxc_i'
+WARNING(75): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:131] set_input_delay: No valid clock found for -clock
+WARNING(76): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:131] Unable to run 'set_input_delay' constraint due to warnings found
+
+SDC file 'C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc' parsed successfully.
+12 clocks (including virtual clocks), 68 inputs and 201 outputs were constrained.
+
+***** Beginning stage initial placement ... *****
+Reading core interface constraints from 'C:/Users/pc/Desktop/file/eye/outflow/Ti60_Demo.interface.csv'.
+Successfully processed interface constraints file "C:/Users/pc/Desktop/file/eye/outflow/Ti60_Demo.interface.csv".
+Writing IO placement constraints to 'C:/Users/pc/Desktop/file/eye/outflow\Ti60_Demo.interface.io'.
+
+Reading placement constraints from 'C:/Users/pc/Desktop/file/eye/outflow\Ti60_Demo.interface.io'.
+
+Reading placement constraints from 'C:/Users/pc/Desktop/file/eye/work_pnr\Ti60_Demo.io_place'.
+***** Ending stage initial placement *****
+
+***** Beginning stage placement ... *****
+Found 190 synchronizers as follows: 
+	Synchronizer 0:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i22_2
+	Synchronizer 1:  u_axi4_ctrl/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i29_2
+	Synchronizer 2:  u_axi4_ctrl/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i28_2
+	Synchronizer 3:  u_axi4_ctrl/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i27_2
+	Synchronizer 4:  u_axi4_ctrl/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i26_2
+	Synchronizer 5:  u_axi4_ctrl/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i25_2
+	Synchronizer 6:  u_axi4_ctrl/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i24_2
+	Synchronizer 7:  u_axi4_ctrl/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i23_2
+	Synchronizer 8:  u_axi4_ctrl/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i27_2
+	Synchronizer 9:  u_axi4_ctrl/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i26_2
+	Synchronizer 10:  u_axi4_ctrl/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i25_2
+	Synchronizer 11:  u_axi4_ctrl/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i24_2
+	Synchronizer 12:  u_axi4_ctrl/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i23_2
+	Synchronizer 13:  u_axi4_ctrl/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i22_2
+	Synchronizer 14:  u_axi4_ctrl/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i21_2
+	Synchronizer 15:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i22_2
+	Synchronizer 16:  u_axi4_ctrl/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i29_2
+	Synchronizer 17:  u_axi4_ctrl/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i28_2
+	Synchronizer 18:  u_axi4_ctrl/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i27_2
+	Synchronizer 19:  u_axi4_ctrl/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i26_2
+	Synchronizer 20:  u_axi4_ctrl/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i25_2
+	Synchronizer 21:  u_axi4_ctrl/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i24_2
+	Synchronizer 22:  u_axi4_ctrl/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i29_2
+	Synchronizer 23:  u_axi4_ctrl/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i28_2
+	Synchronizer 24:  u_axi4_ctrl/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i27_2
+	Synchronizer 25:  u_axi4_ctrl/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i26_2
+	Synchronizer 26:  u_axi4_ctrl/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i25_2
+	Synchronizer 27:  u_axi4_ctrl/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i24_2
+	Synchronizer 28:  u_axi4_ctrl/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i23_2
+	Synchronizer 29:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk3.hbram_cal_top_inst/hbram_cal_ctrl_inst/genblk7.genblk1.rd_data_fifo/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i9_2
+	Synchronizer 30:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk3.hbram_cal_top_inst/hbram_cal_ctrl_inst/genblk7.genblk1.rd_data_fifo/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i6_2
+	Synchronizer 31:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_data_fifo/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i20_2
+	Synchronizer 32:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_data_fifo/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i19_2
+	Synchronizer 33:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_data_fifo/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i18_2
+	Synchronizer 34:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_data_fifo/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i17_2
+	Synchronizer 35:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_data_fifo/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i16_2
+	Synchronizer 36:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_data_fifo/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i15_2
+	Synchronizer 37:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_data_fifo/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i14_2
+	Synchronizer 38:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_data_fifo/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i22_2
+	Synchronizer 39:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_counter_fifo/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i10_2
+	Synchronizer 40:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_data_fifo/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i17_2
+	Synchronizer 41:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_data_fifo/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i16_2
+	Synchronizer 42:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_data_fifo/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i14_2
+	Synchronizer 43:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_data_fifo/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i12_2
+	Synchronizer 44:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_data_fifo/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i11_2
+	Synchronizer 45:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_data_fifo/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i10_2
+	Synchronizer 46:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_counter_fifo/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i10_2
+	Synchronizer 47:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_counter_fifo/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i6_2
+	Synchronizer 48:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/addr_fifo/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i10_2
+	Synchronizer 49:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_counter_fifo/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i9_2
+	Synchronizer 50:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_counter_fifo/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i7_2
+	Synchronizer 51:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_counter_fifo/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i6_2
+	Synchronizer 52:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/addr_fifo/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i10_2
+	Synchronizer 53:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_data_fifo/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i17_2
+	Synchronizer 54:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_data_fifo/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i16_2
+	Synchronizer 55:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_data_fifo/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i15_2
+	Synchronizer 56:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_data_fifo/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i14_2
+	Synchronizer 57:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_data_fifo/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i13_2
+	Synchronizer 58:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_data_fifo/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i12_2
+	Synchronizer 59:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_data_fifo/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i11_2
+	Synchronizer 60:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_data_fifo/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i10_2
+	Synchronizer 61:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_data_fifo/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i18_2
+	Synchronizer 62:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_data_fifo/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i21_2
+	Synchronizer 63:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_data_fifo/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i20_2
+	Synchronizer 64:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_data_fifo/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i19_2
+	Synchronizer 65:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_data_fifo/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i16_2
+	Synchronizer 66:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_data_fifo/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i15_2
+	Synchronizer 67:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/addr_fifo/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i9_2
+	Synchronizer 68:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/addr_fifo/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i8_2
+	Synchronizer 69:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/addr_fifo/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i7_2
+	Synchronizer 70:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_data_fifo/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i13_2
+	Synchronizer 71:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk3.hbram_cal_top_inst/hbram_cal_ctrl_inst/genblk7.genblk1.rd_data_fifo/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i7_2
+	Synchronizer 72:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/ramcal_rst_syncronizer/async_reg[0]~FF u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/ramcal_rst_w~FF
+	Synchronizer 73:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_counter_fifo/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i8_2
+	Synchronizer 74:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk2.lane_aligner_inst/genblk1[0].u1_inst/genblk2.a_rst[0]~FF mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk2.lane_aligner_inst/genblk1[0].u1_inst/genblk2.a_rst[1]~FF
+	Synchronizer 75:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i14_2
+	Synchronizer 76:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/syncreg_14/async_reg[0][0]~FF mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/YUV_420_8_int~FF
+	Synchronizer 77:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/syncreg_1/async_reg[0][0]~FF mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/ready_to_rcv_sync~FF
+	Synchronizer 78:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_data_fifo/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i15_2
+	Synchronizer 79:  u_axi4_ctrl/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i22_2
+	Synchronizer 80:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/genblk2.wr_rst[0]~FF mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/genblk2.wr_rst[1]~FF
+	Synchronizer 81:  u_axi4_ctrl/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i29_2
+	Synchronizer 82:  u_axi4_ctrl/u_W0_FIFO_128/u_efx_fifo_top/genblk2.rd_rst[0]~FF u_axi4_ctrl/u_W0_FIFO_128/u_efx_fifo_top/genblk2.rd_rst[1]~FF
+	Synchronizer 83:  u_axi4_ctrl/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i21_2
+	Synchronizer 84:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/genblk2.rd_rst[0]~FF mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/genblk2.rd_rst[1]~FF
+	Synchronizer 85:  u_axi4_ctrl/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i28_2
+	Synchronizer 86:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk3.hbram_cal_top_inst/hbram_cal_ctrl_inst/genblk7.genblk1.rd_data_fifo/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i10_2
+	Synchronizer 87:  u_axi4_ctrl/u_W0_FIFO_128/u_efx_fifo_top/genblk2.wr_rst[0]~FF u_axi4_ctrl/u_W0_FIFO_128/u_efx_fifo_top/genblk2.wr_rst[1]~FF
+	Synchronizer 88:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_data_fifo/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i21_2
+	Synchronizer 89:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_counter_fifo/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i9_2
+	Synchronizer 90:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/syncreg_2/async_reg[0][2]~FF mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/RxStopState_sync[2]~FF
+	Synchronizer 91:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_counter_fifo/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i8_2
+	Synchronizer 92:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/syncreg_2/async_reg[0][1]~FF mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/RxStopState_sync[1]~FF
+	Synchronizer 93:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_data_fifo/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i18_2
+	Synchronizer 94:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/syncreg_2/async_reg[0][3]~FF mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/RxStopState_sync[3]~FF
+	Synchronizer 95:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_counter_fifo/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i7_2
+	Synchronizer 96:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk2.lane_aligner_inst/genblk1[3].u1_inst/genblk2.a_rst[0]~FF mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk2.lane_aligner_inst/genblk1[3].u1_inst/genblk2.a_rst[1]~FF
+	Synchronizer 97:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/syncreg_2/async_reg[0][0]~FF mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/RxStopState_sync[0]~FF
+	Synchronizer 98:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_data_fifo/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i14_2
+	Synchronizer 99:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk3.hbram_cal_top_inst/hbram_cal_ctrl_inst/genblk7.genblk1.rd_data_fifo/genblk2.wr_rst[0]~FF u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk3.hbram_cal_top_inst/hbram_cal_ctrl_inst/genblk7.genblk1.rd_data_fifo/genblk2.wr_rst[1]~FF
+	Synchronizer 100:  u_axi4_ctrl/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i30_2
+	Synchronizer 101:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/syncreg_25/async_reg[0][0]~FF mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/RAW24_int~FF
+	Synchronizer 102:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_data_fifo/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i22_2
+	Synchronizer 103:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk3.hbram_cal_top_inst/hbram_cal_ctrl_inst/genblk7.genblk1.rd_data_fifo/genblk2.rd_rst[0]~FF u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk3.hbram_cal_top_inst/hbram_cal_ctrl_inst/genblk7.genblk1.rd_data_fifo/genblk2.rd_rst[1]~FF
+	Synchronizer 104:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/syncreg_24/async_reg[0][0]~FF mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/RAW16_int~FF
+	Synchronizer 105:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr2rd_addr_sync/async_reg[0][3]~FF u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_wlast_cntr_b2g_sync[3]~FF
+	Synchronizer 106:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk3.hbram_cal_top_inst/hbram_cal_ctrl_inst/genblk7.genblk1.rd_data_fifo/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i8_2
+	Synchronizer 107:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/axi_rst_syncronizer/async_reg[0]~FF u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/io_axi_rst_w~FF
+	Synchronizer 108:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/syncreg_3/async_reg[0][0]~FF mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/RAW10_int~FF
+	Synchronizer 109:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i24_2
+	Synchronizer 110:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk3.hbram_cal_top_inst/hbram_cal_ctrl_inst/genblk7.genblk1.rd_data_fifo/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i7_2
+	Synchronizer 111:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk3.hbram_cal_top_inst/hbram_cal_ctrl_inst/genblk7.genblk1.rd_data_fifo/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i6_2
+	Synchronizer 112:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xh_mrdy/async_reg[0][0]~FF u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/h_mrdy_sync~FF
+	Synchronizer 113:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i20_2
+	Synchronizer 114:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/syncreg_11/async_reg[0][0]~FF mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/YUV_422_8_int~FF
+	Synchronizer 115:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rst_busy_sync/async_reg[0][0]~FF u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rst_busy_wfifo_sync~FF
+	Synchronizer 116:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/syncreg_2/async_reg[0][0]~FF mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/RAW8_int~FF
+	Synchronizer 117:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk3.hbram_cal_top_inst/hbram_cal_ctrl_inst/genblk7.genblk1.rd_data_fifo/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i9_2
+	Synchronizer 118:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_counter_fifo/genblk2.wr_rst[0]~FF u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_counter_fifo/genblk2.wr_rst[1]~FF
+	Synchronizer 119:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i13_2
+	Synchronizer 120:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/addr_fifo/genblk2.rd_rst[0]~FF u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/addr_fifo/genblk2.rd_rst[1]~FF
+	Synchronizer 121:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/syncreg_12/async_reg[0][0]~FF mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/YUV_422_10_int~FF
+	Synchronizer 122:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/addr_fifo/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i6_2
+	Synchronizer 123:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk3.hbram_cal_top_inst/hbram_cal_ctrl_inst/genblk7.genblk1.rd_data_fifo/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i8_2
+	Synchronizer 124:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_counter_fifo/genblk2.rd_rst[0]~FF u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_counter_fifo/genblk2.rd_rst[1]~FF
+	Synchronizer 125:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i19_2
+	Synchronizer 126:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr2rd_addr_sync/async_reg[0][2]~FF u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_wlast_cntr_b2g_sync[2]~FF
+	Synchronizer 127:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i21_2
+	Synchronizer 128:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr2rd_addr_sync/async_reg[0][1]~FF u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_wlast_cntr_b2g_sync[1]~FF
+	Synchronizer 129:  u_axi4_ctrl/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i30_2
+	Synchronizer 130:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr2rd_addr_sync/async_reg[0][4]~FF u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_wlast_cntr_b2g_sync[4]~FF
+	Synchronizer 131:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i18_2
+	Synchronizer 132:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/syncreg_10/async_reg[0][0]~FF mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/RGB888_int~FF
+	Synchronizer 133:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/ram_rst_syncronizer/async_reg[0]~FF u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/ram_rst_w~FF
+	Synchronizer 134:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i15_2
+	Synchronizer 135:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i14_2
+	Synchronizer 136:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/syncreg_8/async_reg[0][0]~FF mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/RGB555_int~FF
+	Synchronizer 137:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk3.hbram_cal_top_inst/hbram_cal_ctrl_inst/genblk7.genblk1.rd_data_fifo/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i10_2
+	Synchronizer 138:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk2.lane_aligner_inst/genblk1[1].u1_inst/genblk2.a_rst[0]~FF mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk2.lane_aligner_inst/genblk1[1].u1_inst/genblk2.a_rst[1]~FF
+	Synchronizer 139:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_data_fifo/genblk2.wr_rst[0]~FF u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_data_fifo/genblk2.wr_rst[1]~FF
+	Synchronizer 140:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i15_2
+	Synchronizer 141:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/addr_fifo/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i6_2
+	Synchronizer 142:  u_axi4_ctrl/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i30_2
+	Synchronizer 143:  u_axi4_ctrl/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i21_2
+	Synchronizer 144:  u_axi4_ctrl/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i22_2
+	Synchronizer 145:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_data_fifo/genblk2.rd_rst[0]~FF u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_data_fifo/genblk2.rd_rst[1]~FF
+	Synchronizer 146:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/syncreg_20/async_reg[0][1]~FF mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/vc_sync[1]~FF
+	Synchronizer 147:  u_axi4_ctrl/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i23_2
+	Synchronizer 148:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_data_fifo/genblk2.wr_rst[0]~FF u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_data_fifo/genblk2.wr_rst[1]~FF
+	Synchronizer 149:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/syncreg_23/async_reg[0][0]~FF w_csi_rx_vsync0~FF
+	Synchronizer 150:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_data_fifo/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i17_2
+	Synchronizer 151:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_data_fifo/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i18_2
+	Synchronizer 152:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk2.lane_aligner_inst/genblk1[2].u1_inst/genblk2.a_rst[0]~FF mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk2.lane_aligner_inst/genblk1[2].u1_inst/genblk2.a_rst[1]~FF
+	Synchronizer 153:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_data_fifo/genblk2.rd_rst[0]~FF u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/rd_data_fifo/genblk2.rd_rst[1]~FF
+	Synchronizer 154:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/addr_fifo/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i9_2
+	Synchronizer 155:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i24_2
+	Synchronizer 156:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i16_2
+	Synchronizer 157:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/syncreg_9/async_reg[0][0]~FF mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/RGB565_int~FF
+	Synchronizer 158:  u_axi4_ctrl/u_R0_FIFO_128/u_efx_fifo_top/genblk2.wr_rst[0]~FF u_axi4_ctrl/u_R0_FIFO_128/u_efx_fifo_top/genblk2.wr_rst[1]~FF
+	Synchronizer 159:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i17_2
+	Synchronizer 160:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/syncreg_0/async_reg[0][0]~FF mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/RAW6_int~FF
+	Synchronizer 161:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/syncreg_1/async_reg[0][0]~FF mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/RAW7_int~FF
+	Synchronizer 162:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/syncreg_4/async_reg[0][0]~FF mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/RAW12_int~FF
+	Synchronizer 163:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/syncreg_5/async_reg[0][0]~FF mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/RAW14_int~FF
+	Synchronizer 164:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/syncreg_6/async_reg[0][0]~FF mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/RAW20_int~FF
+	Synchronizer 165:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/syncreg_7/async_reg[0][0]~FF mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/RGB444_int~FF
+	Synchronizer 166:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i23_2
+	Synchronizer 167:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/addr_fifo/genblk2.wr_rst[0]~FF u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/addr_fifo/genblk2.wr_rst[1]~FF
+	Synchronizer 168:  u_axi4_ctrl/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i30_2
+	Synchronizer 169:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/syncreg_13/async_reg[0][0]~FF mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/YUV_420_8_legacy_int~FF
+	Synchronizer 170:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/addr_fifo/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i8_2
+	Synchronizer 171:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i16_2
+	Synchronizer 172:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/syncreg_15/async_reg[0][0]~FF mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/YUV_420_10_int~FF
+	Synchronizer 173:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i17_2
+	Synchronizer 174:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i18_2
+	Synchronizer 175:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/syncreg_16/async_reg[0][0]~FF mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/gen_long_pkt_int~FF
+	Synchronizer 176:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i19_2
+	Synchronizer 177:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i20_2
+	Synchronizer 178:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/syncreg_17/async_reg[0][0]~FF mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/user_define_8bit_int~FF
+	Synchronizer 179:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i21_2
+	Synchronizer 180:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i13_2
+	Synchronizer 181:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/syncreg_18/async_reg[0][0]~FF mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/embed_8bit_nonvideo_int~FF
+	Synchronizer 182:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i23_2
+	Synchronizer 183:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/syncreg_20/async_reg[0][0]~FF mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/vc_sync[0]~FF
+	Synchronizer 184:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr2rd_addr_sync/async_reg[0][0]~FF u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/wr_wlast_cntr_b2g_sync[0]~FF
+	Synchronizer 185:  u_axi4_ctrl/u_R0_FIFO_128/u_efx_fifo_top/genblk2.rd_rst[0]~FF u_axi4_ctrl/u_R0_FIFO_128/u_efx_fifo_top/genblk2.rd_rst[1]~FF
+	Synchronizer 186:  u_axi4_ctrl/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i21_2
+	Synchronizer 187:  u_hbram/u_hbram_top/hard_cal_block.hbram_cal_axi_top_inst/genblk2.hbram_axi_wrapper_inst/xefx_axi_amux_top/addr_fifo/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i7_2
+	Synchronizer 188:  u_axi4_ctrl/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i22_2
+	Synchronizer 189:  mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/syncreg_26/async_reg[0][0]~FF mipi_rx_0/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/RAW28_int~FF
+Create C:/Users/pc/Desktop/file/eye/outflow\Ti60_Demo_after_qp.qdelay
+QPLACER STATIC DB USAGE DISABLED
+Starting Global Placer with 2 threads ...
+
+ ----------     -------  --------------     -------
+  Iteration       WHPWL Worst Slack (ps) Convergence
+ ----------     -------  --------------     -------
+          1    19745276           -1237         1.5%
+          2    11737587           -1224         1.7%
+          3     7057362           -1160         2.7%
+          4     4799371           -1257         5.6%
+          5     2186054           -1401        14.9%
+          6     1302294           -1462        32.3%
+          7     1062753           -1518        42.1%
+          8      972026           -1511        45.6%
+          9      930817           -1553        47.0%
+         10      912186           -1485        49.6%
+         11      885780           -1518        52.2%
+         12      872077           -1473        54.8%
+         13      853060           -1551        58.9%
+         14      841616           -1532        59.8%
+         15      818898           -1528        64.2%
+         16      803770           -1520        66.8%
+         17      802061           -1468        69.2%
+         18      800984           -1489        69.2%
+         19      796656           -1434        71.3%
+         20      797578           -1412        71.6%
+         21      797970           -1381        73.4%
+         22      789420           -1411        75.6%
+         23      783047           -1364        77.1%
+         24      782450           -1282        78.6%
+         25      780345           -1429        79.9%
+         26      778637           -1376        81.6%
+         27      776316           -1432        83.1%
+         28      777140           -1434        84.0%
+         29      774658           -1376        85.0%
+         30      775243           -1434        86.4%
+         31      773533           -1294        87.5%
+         32      775521           -1512        88.4%
+         33      777424           -1503        89.3%
+         34      779961           -1503        89.9%
+         35      776038           -1502        91.4%
+         36      781833           -1501        91.6%
+         37      783481           -1501        91.8%
+         38      784112           -1567        92.3%
+         39      787108           -1567        93.0%
+         40      788876           -1557        93.8%
+         41      792201           -1530        94.5%
+         42      792760           -1526        95.2%
+         43      738939           -1581        95.5%
+         44      742859           -1554        97.5%
+         45      744879           -1418        98.3%
+         46      748510           -1418        98.8%
+         47      750388           -1418        98.8%
+         48      753420           -1406        99.1%
+         49      754997           -1552        99.2%
+Starting Annealer
+
+ ----------     -------  --------------     -------
+  Iteration       WHPWL  Delay Max (ps)     R Limit
+ ----------     -------  --------------     -------
+          0      744879            1309        30.0
+          1      731779            1214        28.4
+          2      701956            1303        26.5
+          3      677841            1303        24.4
+          4      656163            1303        22.5
+          5      644962            1160        20.6
+          6      631761            1160        18.9
+          7      620401            1168        17.2
+          8      608794            1168        15.7
+          9      603711            1168        14.2
+         10      595638            1168        12.9
+         11      587509            1168        11.7
+         12      583645            1168        10.6
+         13      576100            1114         9.5
+         14      572824            1114         8.6
+         15      567679            1114         7.8
+         16      564596            1114         7.0
+         17      561034            1166         6.3
+         18      558104            1166         5.7
+         19      554544            1214         5.1
+         20      553195            1214         4.6
+Generate C:/Users/pc/Desktop/file/eye/outflow\Ti60_Demo_after_qp.qdelay
+Placement successful: 22721 cells are placed
+Peak congestion smeared over 1/4 of the chip is 0.470993 at 90,136
+Congestion-weighted HPWL per net: 17.7387
+
+Reading placement constraints from 'C:/Users/pc/Desktop/file/eye/outflow/Ti60_Demo.qplace'.
+Finished Realigning Types (5563 blocks needed type change)
+Run checks after placement.
+
+Completed placement consistency check successfully.
+Successfully created FPGA place file 'C:/Users/pc/Desktop/file/eye/outflow/Ti60_Demo.place'
+Placement took 109.615 seconds.
+	Placement took 89.6094 seconds (approximately) in total CPU time.
+Placement virtual memory usage: begin = 467.436 MB, end = 564.832 MB, delta = 97.396 MB
+	Placement peak virtual memory usage = 985.608 MB
+Placement resident set memory usage: begin = 448.888 MB, end = 538.94 MB, delta = 90.052 MB
+	Placement peak resident set memory usage = 931.164 MB
+***** Ending stage placement *****
+

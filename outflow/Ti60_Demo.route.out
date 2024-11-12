@@ -1,0 +1,304 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2023.2.307 
+Compiled: Dec 15 2023.
+
+Copyright (C) 2013 - 2023 Efinix, Inc. All rights reserved.
+
+
+The Tool Is Based on VPR of University of Toronto,
+a free open source code under MIT license.
+
+
+Running Placement and Routing for Family "Titanium", Device "Ti60F100S3F2" ...
+
+***** Beginning stage routing ... *****
+WARNING(1): No ports matched 'csi2_rxc_i'
+WARNING(2): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:27] No valid object(s) found for ''
+WARNING(3): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:27] No valid pin(s) found for clock
+WARNING(4): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:27] Unable to run 'create_clock' constraint due to warnings found
+WARNING(5): No clocks matched 'csi2_rxc_i'
+WARNING(6): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:34] No valid object(s) found for ''
+WARNING(7): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:34] set_false_path: Object(s) specified for -to option contains no vaild endpoints
+WARNING(8): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:34] Unable to run 'set_false_path' constraint due to warnings found
+WARNING(9): No clocks matched 'csi2_rxc_i'
+WARNING(10): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:39] No valid object(s) found for ''
+WARNING(11): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:39] set_false_path: Object(s) specified for -from option contains no vaild startpoints
+WARNING(12): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:39] Unable to run 'set_false_path' constraint due to warnings found
+WARNING(13): No clocks matched 'csi2_rxc_i'
+WARNING(14): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:42] No valid object(s) found for ''
+WARNING(15): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:42] set_false_path: Object(s) specified for -from option contains no vaild startpoints
+WARNING(16): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:42] Unable to run 'set_false_path' constraint due to warnings found
+WARNING(17): No clocks matched 'csi2_rxc_i'
+WARNING(18): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:44] No valid object(s) found for ''
+WARNING(19): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:44] set_false_path: Object(s) specified for -to option contains no vaild endpoints
+WARNING(20): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:44] Unable to run 'set_false_path' constraint due to warnings found
+WARNING(21): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:116] No clocks matched 'csi2_rxc_i'
+WARNING(22): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:116] set_output_delay: No valid clock found for -clock
+WARNING(23): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:116] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(24): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:117] No clocks matched 'csi2_rxc_i'
+WARNING(25): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:117] set_output_delay: No valid clock found for -clock
+WARNING(26): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:117] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(27): No ports matched 'csi2_rxd0_hs_i[*]'
+WARNING(28): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:118] No clocks matched 'csi2_rxc_i'
+WARNING(29): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:118] set_input_delay: No valid clock found for -clock
+WARNING(30): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:118] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(31): No ports matched 'csi2_rxd0_hs_i[*]'
+WARNING(32): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:119] No clocks matched 'csi2_rxc_i'
+WARNING(33): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:119] set_input_delay: No valid clock found for -clock
+WARNING(34): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:119] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(35): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:120] No clocks matched 'csi2_rxc_i'
+WARNING(36): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:120] set_output_delay: No valid clock found for -clock
+WARNING(37): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:120] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(38): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:121] No clocks matched 'csi2_rxc_i'
+WARNING(39): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:121] set_output_delay: No valid clock found for -clock
+WARNING(40): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:121] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(41): No ports matched 'csi2_rxd1_hs_i[*]'
+WARNING(42): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:122] No clocks matched 'csi2_rxc_i'
+WARNING(43): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:122] set_input_delay: No valid clock found for -clock
+WARNING(44): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:122] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(45): No ports matched 'csi2_rxd1_hs_i[*]'
+WARNING(46): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:123] No clocks matched 'csi2_rxc_i'
+WARNING(47): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:123] set_input_delay: No valid clock found for -clock
+WARNING(48): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:123] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(49): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:124] No clocks matched 'csi2_rxc_i'
+WARNING(50): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:124] set_output_delay: No valid clock found for -clock
+WARNING(51): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:124] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(52): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:125] No clocks matched 'csi2_rxc_i'
+WARNING(53): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:125] set_output_delay: No valid clock found for -clock
+WARNING(54): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:125] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(55): No ports matched 'csi2_rxd2_hs_i[*]'
+WARNING(56): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:126] No clocks matched 'csi2_rxc_i'
+WARNING(57): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:126] set_input_delay: No valid clock found for -clock
+WARNING(58): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:126] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(59): No ports matched 'csi2_rxd2_hs_i[*]'
+WARNING(60): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:127] No clocks matched 'csi2_rxc_i'
+WARNING(61): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:127] set_input_delay: No valid clock found for -clock
+WARNING(62): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:127] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(63): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:128] No clocks matched 'csi2_rxc_i'
+WARNING(64): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:128] set_output_delay: No valid clock found for -clock
+WARNING(65): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:128] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(66): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:129] No clocks matched 'csi2_rxc_i'
+WARNING(67): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:129] set_output_delay: No valid clock found for -clock
+WARNING(68): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:129] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(69): No ports matched 'csi2_rxd3_hs_i[*]'
+WARNING(70): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:130] No clocks matched 'csi2_rxc_i'
+WARNING(71): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:130] set_input_delay: No valid clock found for -clock
+WARNING(72): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:130] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(73): No ports matched 'csi2_rxd3_hs_i[*]'
+WARNING(74): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:131] No clocks matched 'csi2_rxc_i'
+WARNING(75): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:131] set_input_delay: No valid clock found for -clock
+WARNING(76): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:131] Unable to run 'set_input_delay' constraint due to warnings found
+
+SDC file 'C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc' parsed successfully.
+12 clocks (including virtual clocks), 68 inputs and 201 outputs were constrained.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Router Setup
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[Setup Parallel Routing Scheduler]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Route Circuit with 2 threads
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CSS enabled! Optimizing clock skews ... 
+Non-legalized beneficial skew improved geomean CPD by 0.00% (from 1795ps to 1795ps)
+CSS improved CPD of clock hbramClk by 0.00% (from 1795ps to 1795ps)
+Discretized beneficial skew improved geomean CPD by 0.00% (from 1795ps to 1795ps in 4 iterations and 0.9 sec)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Iter  1: overlap=51067   heapops=4633359    (0%) cpd=1942  frr=1.00  msec=3770
+[Setup Delay Budgets | 1067.7 ms]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Hold Fixing
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Total min wire delay:   4779270
+Hold fix wire delay:        636
+Hold fix delay ratio:     0.01%
+Pins requiring hold fix:  0.01%
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Iter  2: overlap=16046   heapops=5597049    (14%) cpd=1942  frr=1.00  msec=1661
+Iter  3: overlap=5561    heapops=5872874    (18%) cpd=1942  frr=1.00  msec=1621
+Iter  4: overlap=1128    heapops=4983426    (37%) cpd=1942  frr=1.00  msec=1543
+[Rebuild Parallel Routing Scheduler]
+Iter  5: overlap=135     heapops=2351685    (66%) cpd=1942  frr=1.00  msec=1436
+Iter  6: overlap=19      heapops=767653     (81%) cpd=1942  frr=1.00  msec=750
+Iter  7: overlap=3       heapops=211747     (88%) cpd=1942  frr=1.00  msec=568
+Iter  8: overlap=0       heapops=71932      (88%) cpd=1942  frr=1.00  msec=494
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Routing Result
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Routing Succeeded in 13.18 seconds taking 8 iterations! 
+
+First iteration critical path delay = 1.942 ns 
+Last iteration critical path delay  = 1.942 ns (ratio = 1.00)
+Max Routing Heap Size = 31,972
+Routing trace written to file 'C:/Users/pc/Desktop/file/eye/outflow/Ti60_Demo.troutingtraces' 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Routing took 21.7214 seconds.
+	Routing took 16.0625 seconds (approximately) in total CPU time.
+Routing virtual memory usage: begin = 564.832 MB, end = 1212.52 MB, delta = 647.692 MB
+	Routing peak virtual memory usage = 1269.77 MB
+Routing resident set memory usage: begin = 538.948 MB, end = 1139.62 MB, delta = 600.668 MB
+	Routing peak resident set memory usage = 1196.38 MB
+***** Ending stage routing *****
+
+***** Beginning stage final timing analysis ... *****
+WARNING(77): No ports matched 'csi2_rxc_i'
+WARNING(78): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:27] No valid object(s) found for ''
+WARNING(79): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:27] No valid pin(s) found for clock
+WARNING(80): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:27] Unable to run 'create_clock' constraint due to warnings found
+WARNING(81): No clocks matched 'csi2_rxc_i'
+WARNING(82): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:34] No valid object(s) found for ''
+WARNING(83): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:34] set_false_path: Object(s) specified for -to option contains no vaild endpoints
+WARNING(84): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:34] Unable to run 'set_false_path' constraint due to warnings found
+WARNING(85): No clocks matched 'csi2_rxc_i'
+WARNING(86): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:39] No valid object(s) found for ''
+WARNING(87): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:39] set_false_path: Object(s) specified for -from option contains no vaild startpoints
+WARNING(88): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:39] Unable to run 'set_false_path' constraint due to warnings found
+WARNING(89): No clocks matched 'csi2_rxc_i'
+WARNING(90): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:42] No valid object(s) found for ''
+WARNING(91): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:42] set_false_path: Object(s) specified for -from option contains no vaild startpoints
+WARNING(92): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:42] Unable to run 'set_false_path' constraint due to warnings found
+WARNING(93): No clocks matched 'csi2_rxc_i'
+WARNING(94): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:44] No valid object(s) found for ''
+WARNING(95): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:44] set_false_path: Object(s) specified for -to option contains no vaild endpoints
+WARNING(96): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:44] Unable to run 'set_false_path' constraint due to warnings found
+WARNING(97): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:116] No clocks matched 'csi2_rxc_i'
+WARNING(98): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:116] set_output_delay: No valid clock found for -clock
+WARNING(99): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:116] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(100): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:117] No clocks matched 'csi2_rxc_i'
+WARNING(101): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:117] set_output_delay: No valid clock found for -clock
+WARNING(102): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:117] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(103): No ports matched 'csi2_rxd0_hs_i[*]'
+WARNING(104): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:118] No clocks matched 'csi2_rxc_i'
+WARNING(105): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:118] set_input_delay: No valid clock found for -clock
+WARNING(106): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:118] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(107): No ports matched 'csi2_rxd0_hs_i[*]'
+WARNING(108): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:119] No clocks matched 'csi2_rxc_i'
+WARNING(109): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:119] set_input_delay: No valid clock found for -clock
+WARNING(110): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:119] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(111): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:120] No clocks matched 'csi2_rxc_i'
+WARNING(112): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:120] set_output_delay: No valid clock found for -clock
+WARNING(113): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:120] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(114): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:121] No clocks matched 'csi2_rxc_i'
+WARNING(115): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:121] set_output_delay: No valid clock found for -clock
+WARNING(116): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:121] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(117): No ports matched 'csi2_rxd1_hs_i[*]'
+WARNING(118): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:122] No clocks matched 'csi2_rxc_i'
+WARNING(119): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:122] set_input_delay: No valid clock found for -clock
+WARNING(120): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:122] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(121): No ports matched 'csi2_rxd1_hs_i[*]'
+WARNING(122): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:123] No clocks matched 'csi2_rxc_i'
+WARNING(123): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:123] set_input_delay: No valid clock found for -clock
+WARNING(124): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:123] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(125): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:124] No clocks matched 'csi2_rxc_i'
+WARNING(126): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:124] set_output_delay: No valid clock found for -clock
+WARNING(127): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:124] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(128): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:125] No clocks matched 'csi2_rxc_i'
+WARNING(129): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:125] set_output_delay: No valid clock found for -clock
+WARNING(130): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:125] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(131): No ports matched 'csi2_rxd2_hs_i[*]'
+WARNING(132): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:126] No clocks matched 'csi2_rxc_i'
+WARNING(133): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:126] set_input_delay: No valid clock found for -clock
+WARNING(134): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:126] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(135): No ports matched 'csi2_rxd2_hs_i[*]'
+WARNING(136): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:127] No clocks matched 'csi2_rxc_i'
+WARNING(137): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:127] set_input_delay: No valid clock found for -clock
+WARNING(138): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:127] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(139): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:128] No clocks matched 'csi2_rxc_i'
+WARNING(140): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:128] set_output_delay: No valid clock found for -clock
+WARNING(141): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:128] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(142): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:129] No clocks matched 'csi2_rxc_i'
+WARNING(143): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:129] set_output_delay: No valid clock found for -clock
+WARNING(144): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:129] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(145): No ports matched 'csi2_rxd3_hs_i[*]'
+WARNING(146): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:130] No clocks matched 'csi2_rxc_i'
+WARNING(147): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:130] set_input_delay: No valid clock found for -clock
+WARNING(148): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:130] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(149): No ports matched 'csi2_rxd3_hs_i[*]'
+WARNING(150): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:131] No clocks matched 'csi2_rxc_i'
+WARNING(151): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:131] set_input_delay: No valid clock found for -clock
+WARNING(152): [SDC C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc:131] Unable to run 'set_input_delay' constraint due to warnings found
+
+SDC file 'C:/Users/pc/Desktop/file/eye/Ti60_Demo.pt.sdc' parsed successfully.
+12 clocks (including virtual clocks), 68 inputs and 201 outputs were constrained.
+
+Maximum possible analyzed clocks frequency
+ Clock Name  Period (ns)  Frequency (MHz)     Edge
+hdmi_pixel      5.712        175.070         (R-R)
+sys_clk_i       4.811        207.857         (R-R)
+hbramClk        3.810        262.467         (R-F)
+hbramClk_Cal    2.357        424.268         (R-R)
+csi_rxc_i       3.328        300.481         (R-R)
+
+Geomean max period: 3.827
+
+Setup (Max) Clock Relationship
+  Launch Clock    Capture Clock   Constraint (ns)     Slack (ns)          Edge
+  hdmi_pixel       hdmi_pixel          6.734             1.022           (R-R)
+  hdmi_pixel       sys_clk_i           0.001            -1.327           (R-R)
+  sys_clk_i        hdmi_pixel          0.001            -0.797           (R-R)
+  sys_clk_i        sys_clk_i           8.081             3.270           (R-R)
+  sys_clk_i        hbramClk            0.001            -0.866           (R-R)
+  sys_clk_i        csi_rxc_i           0.001            -0.720           (R-R)
+  hbramClk         sys_clk_i           0.001            -0.481           (R-R)
+  hbramClk         hbramClk            4.040             0.736           (R-R)
+  hbramClk         hbramClk            2.020             0.115           (R-F)
+  hbramClk         hbramClk90          3.030             1.518           (R-F)
+  hbramClk         hbramClk_Cal        4.040             2.846           (R-R)
+  hbramClk_Cal     hbramClk            4.040             3.361           (R-R)
+  hbramClk_Cal     hbramClk_Cal        4.040             1.683           (R-R)
+  csi_rxc_i        sys_clk_i           0.001            -0.654           (R-R)
+  csi_rxc_i        csi_rxc_i           5.000             1.672           (R-R)
+
+Hold (Min) Clock Relationship
+  Launch Clock    Capture Clock   Constraint (ns)     Slack (ns)          Edge
+  hdmi_pixel       hdmi_pixel           0.000           0.034            (R-R)
+  hdmi_pixel       sys_clk_i            0.000           0.120            (R-R)
+  sys_clk_i        hdmi_pixel           0.000           0.083            (R-R)
+  sys_clk_i        sys_clk_i            0.000           0.034            (R-R)
+  sys_clk_i        hbramClk             0.000           0.036            (R-R)
+  sys_clk_i        csi_rxc_i            0.000           0.060            (R-R)
+  hbramClk         sys_clk_i            0.000           0.013            (R-R)
+  hbramClk         hbramClk             0.000           0.047            (R-R)
+  hbramClk         hbramClk            -2.020           2.399            (R-F)
+  hbramClk         hbramClk90          -1.010           1.616            (R-F)
+  hbramClk         hbramClk_Cal         0.000           0.152            (R-R)
+  hbramClk_Cal     hbramClk             0.000           0.248            (R-R)
+  hbramClk_Cal     hbramClk_Cal         0.000           0.034            (R-R)
+  csi_rxc_i        sys_clk_i            0.000           0.010            (R-R)
+  csi_rxc_i        csi_rxc_i            0.000           0.023            (R-R)
+
+WARNING(153): Clock domain between hdmi_pixel (rising) and sys_clk_i (rising) may not meet (slack: -1.327 ns) the setup (max) timing requirement
+WARNING(154): Clock domain between sys_clk_i (rising) and hdmi_pixel (rising) may not meet (slack: -0.797 ns) the setup (max) timing requirement
+WARNING(155): Clock domain between sys_clk_i (rising) and hbramClk (rising) may not meet (slack: -0.866 ns) the setup (max) timing requirement
+WARNING(156): Clock domain between sys_clk_i (rising) and csi_rxc_i (rising) may not meet (slack: -0.720 ns) the setup (max) timing requirement
+WARNING(157): Clock domain between hbramClk (rising) and sys_clk_i (rising) may not meet (slack: -0.481 ns) the setup (max) timing requirement
+WARNING(158): Clock domain between csi_rxc_i (rising) and sys_clk_i (rising) may not meet (slack: -0.654 ns) the setup (max) timing requirement
+
+Write Timing Report to "C:/Users/pc/Desktop/file/eye/outflow\Ti60_Demo.timing.rpt" ...
+final timing analysis took 14.5803 seconds.
+	final timing analysis took 6.28125 seconds (approximately) in total CPU time.
+final timing analysis virtual memory usage: begin = 1212.52 MB, end = 1383.95 MB, delta = 171.428 MB
+	final timing analysis peak virtual memory usage = 1397.41 MB
+final timing analysis resident set memory usage: begin = 1139.7 MB, end = 1295.13 MB, delta = 155.424 MB
+	final timing analysis peak resident set memory usage = 1308.23 MB
+***** Ending stage final timing analysis *****
+
+***** Beginning stage bitstream generation ... *****
+Reading core interface constraints from 'C:/Users/pc/Desktop/file/eye/outflow/Ti60_Demo.interface.csv'.
+Successfully processed interface constraints file "C:/Users/pc/Desktop/file/eye/outflow/Ti60_Demo.interface.csv".
+Finished writing bitstream file C:/Users/pc/Desktop/file/eye/work_pnr\Ti60_Demo.lbf.
+Bitstream generation took 3.7752 seconds.
+	Bitstream generation took 1.57812 seconds (approximately) in total CPU time.
+Bitstream generation virtual memory usage: begin = 1383.95 MB, end = 1533.52 MB, delta = 149.572 MB
+	Bitstream generation peak virtual memory usage = 1595.66 MB
+Bitstream generation resident set memory usage: begin = 1295.16 MB, end = 1441.32 MB, delta = 146.164 MB
+	Bitstream generation peak resident set memory usage = 1487 MB
+***** Ending stage bitstream generation *****
+
+The entire flow of EFX_PNR took 162.066 seconds.
+	The entire flow of EFX_PNR took 119.094 seconds (approximately) in total CPU time.
+The entire flow of EFX_PNR virtual memory usage: begin = 5.58 MB, end = 817.724 MB, delta = 812.144 MB
+	The entire flow of EFX_PNR peak virtual memory usage = 1595.66 MB
+The entire flow of EFX_PNR resident set memory usage: begin = 13.012 MB, end = 765.708 MB, delta = 752.696 MB
+	The entire flow of EFX_PNR peak resident set memory usage = 1487 MB

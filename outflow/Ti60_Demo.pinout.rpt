@@ -1,0 +1,118 @@
+
+# Efinity Pinout Report
+# Version: 2023.2.307
+# Date: 2024-11-11 23:31
+
+# Copyright (C) 2013 - 2023 Efinix Inc. All rights reserved.
+
+# Device: Ti60F100S3F2
+# Package status: final
+# Project: Ti60_Demo
+# Configuration mode: active (x2)
+
+# NOTE: Similar information is available in Ti60_Demo.pinout.csv
+
++------------+----------------------------------+--------------------+---------------+--------------+------------------+-------+-------------+---------------------------------+
+| Pin Number |           Signal Name            |      Pin Name      |   Direction   | I/O Standard | I/O Bank Voltage |  Bank |  Pull Type  |             Function            |
++------------+----------------------------------+--------------------+---------------+--------------+------------------+-------+-------------+---------------------------------+
+|     A1     |             --GND--              |        GND         |     Power     |              |                  |       |             |              Ground             |
+|     A2     |             --VCC--              |      VCCA_TL       |     Power     |              |                  |       |             |         0.95 V PLL Power        |
+|     A3     |            --UNUSED--            |     REF_RES_1B     |     Input     |              |      1.2 V       |   1B  |             |                                 |
+|     A4     |          csi_trig_io.P           |     GPIOT_P_01     | Bidirectional | 1.8 V LVCMOS |      1.8 V       | 2A_2B |             |             User IO             |
+|     A5     |             --GND--              |        GND         |     Power     |              |                  |       |             |              Ground             |
+|     A6     |             --VCC--              |     VCCIO2A_2B     |     Power     |              |      1.8 V       | 2A_2B |             |           VCCIO Power           |
+|     A7     |             --VCC--              |      VCCA_TR       |     Power     |              |                  |       |             |         0.95 V PLL Power        |
+|     A8     |             --GND--              |        GND         |     Power     |              |                  |       |             |              Ground             |
+|     A9     |           uart_tx_o.P            | GPIOR_P_19_PLLIN0  |     Output    | 1.2 V LVCMOS |      1.2 V       |   3A  |             |        User IO/PLL_CLKIN        |
+|    A10     |           uart_rx_i.N            |     GPIOR_N_19     |     Input     | 1.2 V LVCMOS |      1.2 V       |   3A  | weak pullup |        User IO/PLL_CLKIN        |
+|     B1     |     --CBSEL0-- / dsi_txd0.P      | GPIOL_P_13_CBSEL0  |     Output    |              |      1.2 V       |   1B  |             |             User IO             |
+|     B2     |             led_o.N              |     GPIOL_N_18     |     Output    | 1.2 V LVCMOS |      1.2 V       |   1B  |             |        User IO/PLL_CLKIN        |
+|     B3     |            clk_27m.P             | GPIOL_P_18_PLLIN0  |     Input     | 1.2 V LVCMOS |      1.2 V       |   1B  |             |        User IO/PLL_CLKIN        |
+|     B4     |         csi_tx_sda_io.P          |  GPIOL_P_17_EXTFB  | Bidirectional | 1.2 V LVCMOS |      1.2 V       |   1B  |             |        User IO/PLL_EXTFB        |
+|     B5     |            --UNUSED--            |     REF_RES_2A     |     Input     |              |      1.8 V       | 2A_2B |             |                                 |
+|     B6     |             --VCC--              |       VCCAUX       |     Power     |              |      1.8 V       | 1A_4B |             |                                 |
+|     B7     |            --UNUSED--            |     REF_RES_3A     |     Input     |              |      1.2 V       |   3A  |             |                                 |
+|     B8     |            csi_rxd2.N            |     GPIOR_N_13     |     Input     |              |      1.2 V       |   3A  |             |             User IO             |
+|     B9     |            csi_rxd1.P            |     GPIOR_P_14     |     Input     |              |      1.2 V       |   3A  |             |             User IO             |
+|    B10     |            csi_rxd1.N            |     GPIOR_N_14     |     Input     |              |      1.2 V       |   3A  |             |             User IO             |
+|     C1     |     --CBSEL1-- / dsi_txd0.N      | GPIOL_N_13_CBSEL1  |     Output    |              |      1.2 V       |   1B  |             |             User IO             |
+|     C2     |            dsi_txc.N             |     GPIOL_N_12     |     Output    |              |      1.2 V       |   1B  |             |             User IO             |
+|     C3     |            dsi_txc.P             |     GPIOL_P_12     |     Output    |              |      1.2 V       |   1B  |             |             User IO             |
+|     C4     |         csi_tx_scl_io.N          |     GPIOL_N_17     | Bidirectional | 1.2 V LVCMOS |      1.2 V       |   1B  |             |        User IO/PLL_EXTFB        |
+|     C5     |    --NSTATUS-- / dsi_pwm_o.P     | GPIOL_P_15_NSTATUS |     Output    | 1.2 V LVCMOS |      1.2 V       |   1B  |             |    User IO/VREF/Configuration   |
+|     C6     |             --VCC--              |        VCC         |     Power     |              |                  |       |             |         0.95 V VCC Power        |
+|     C7     |            csi_rxc.N             | GPIOR_N_10_CLK9_N  |     Input     |              |      1.2 V       |   3A  |             |        User IO/GCLK/RCLK        |
+|     C8     |            csi_rxd2.P            |     GPIOR_P_13     |     Input     |              |      1.2 V       |   3A  |             |           User IO/VREF          |
+|     C9     |             --VCC--              |      VCCIO3A       |     Power     |              |      1.2 V       |   3A  |             |           VCCIO Power           |
+|    C10     |            csi_rxd0.N            |     GPIOR_N_12     |     Input     |              |      1.2 V       |   3A  |             |             User IO             |
+|     D1     |            dsi_txd2.N            | GPIOL_N_10_CLK3_N  |     Output    |              |      1.2 V       |   1B  |             |        User IO/GCLK/RCLK        |
+|     D2     |             --GND--              |        GND         |     Power     |              |                  |       |             |              Ground             |
+|     D3     |             --VCC--              |      VCCIO1B       |     Power     |              |      1.2 V       |   1B  |             |           VCCIO Power           |
+|     D4     |             --GND--              |        GND         |     Power     |              |                  |       |             |              Ground             |
+|     D5     |    --TEST_N-- / csi2_sda_io.N    | GPIOL_N_15_TEST_N  | Bidirectional | 1.2 V LVCMOS |      1.2 V       |   1B  |             |      User IO/Configuration      |
+|     D6     |            csi_rxc.P             | GPIOR_P_10_CLK9_P  |     Input     |              |      1.2 V       |   3A  |             |        User IO/GCLK/RCLK        |
+|     D7     |             --VCC--              |        VCC         |     Power     |              |                  |       |             |         0.95 V VCC Power        |
+|     D8     |            csi_rxd3.P            | GPIOR_P_11_CLK8_P  |     Input     |              |      1.2 V       |   3A  |             |        User IO/GCLK/RCLK        |
+|     D9     |            csi_rxd3.N            | GPIOR_N_11_CLK8_N  |     Input     |              |      1.2 V       |   3A  |             |        User IO/GCLK/RCLK        |
+|    D10     |            csi_rxd0.P            |     GPIOR_P_12     |     Input     |              |      1.2 V       |   3A  |             |             User IO             |
+|     E1     |  --PCR_READBACK-- / dsi_txd2.P   | GPIOL_P_10_CLK3_P  |     Output    |              |      1.2 V       |   1B  |             | User IO/GCLK/RCLK/Configuration |
+|     E2     |            dsi_txd3.P            |     GPIOL_P_11     |     Output    |              |      1.2 V       |   1B  |             |             User IO             |
+|     E3     |            dsi_txd3.N            |     GPIOL_N_11     |     Output    |              |      1.2 V       |   1B  |             |             User IO             |
+|     E4     |           hdmi_txd2.P            | GPIOL_P_08_CLK1_P  |     Output    |              |      1.8 V       | 1A_4B |             |        User IO/GCLK/RCLK        |
+|     E5     | --EXT_CONFIG_CLK-- / hdmi_txd2.N | GPIOL_N_08_CLK1_N  |     Output    |              |      1.8 V       | 1A_4B |             | User IO/GCLK/RCLK/Configuration |
+|     E6     |             --VCC--              |        VCC         |     Power     |              |                  |       |             |         0.95 V VCC Power        |
+|     E7     |            csi_txd1.N            | GPIOR_N_08_CLK11_N |     Output    |              |      1.2 V       | 3B_4A |             |        User IO/GCLK/RCLK        |
+|     E8     |            csi_txd0.P            | GPIOR_P_09_CLK10_P |     Output    |              |      1.2 V       | 3B_4A |             |        User IO/GCLK/RCLK        |
+|     E9     |            csi_txd0.N            | GPIOR_N_09_CLK10_N |     Output    |              |      1.2 V       | 3B_4A |             |        User IO/GCLK/RCLK        |
+|    E10     |             --GND--              |        GND         |     Power     |              |                  |       |             |              Ground             |
+|     F1     |            hdmi_txc.N            |     GPIOL_N_06     |     Output    |              |      1.8 V       | 1A_4B |             |             User IO             |
+|     F2     |            dsi_txd1.N            | GPIOL_N_09_CLK2_N  |     Output    |              |      1.2 V       |   1B  |             |        User IO/GCLK/RCLK        |
+|     F3     |            dsi_txd1.P            | GPIOL_P_09_CLK2_P  |     Output    |              |      1.2 V       |   1B  |             |        User IO/GCLK/RCLK        |
+|     F4     |           hdmi_txd1.P            | GPIOL_P_07_CLK0_P  |     Output    |              |      1.8 V       | 1A_4B |             |        User IO/GCLK/RCLK        |
+|     F5     |           hdmi_txd1.N            | GPIOL_N_07_CLK0_N  |     Output    |              |      1.8 V       | 1A_4B |             |        User IO/GCLK/RCLK        |
+|     F6     |             --VCC--              |        VCC         |     Power     |              |                  |       |             |         0.95 V VCC Power        |
+|     F7     |            csi_txd1.P            | GPIOR_P_08_CLK11_P |     Output    |              |      1.2 V       | 3B_4A |             |        User IO/GCLK/RCLK        |
+|     F8     |            csi_txd2.N            |     GPIOR_N_07     |     Output    |              |      1.2 V       | 3B_4A |             |             User IO             |
+|     F9     |      --CDI20-- / csi_txc.P       |  GPIOR_P_06_CDI20  |     Output    |              |      1.2 V       | 3B_4A |             |             User IO             |
+|    F10     |      --CDI21-- / csi_txc.N       |  GPIOR_N_06_CDI21  |     Output    |              |      1.2 V       | 3B_4A |             |             User IO             |
+|     G1     |            hdmi_txc.P            |     GPIOL_P_06     |     Output    |              |      1.8 V       | 1A_4B |             |             User IO             |
+|     G2     |             --VCC--              |     VCCIO1A_4B     |     Power     |              |      1.8 V       | 1A_4B |             |           VCCIO Power           |
+|     G3     |           hdmi_txd0.N            |     GPIOL_N_05     |     Output    |              |      1.8 V       | 1A_4B |             |             User IO             |
+|     G4     |           hdmi_txd0.P            |     GPIOL_P_05     |     Output    |              |      1.8 V       | 1A_4B |             |             User IO             |
+|     G5     |             --VCC--              |        VCC         |     Power     |              |                  |       |             |         0.95 V VCC Power        |
+|     G6     |             --VCC--              |       VCCAUX       |     Power     |              |      1.8 V       | 1A_4B |             |                                 |
+|     G7     |             --GND--              |        GND         |     Power     |              |                  |       |             |              Ground             |
+|     G8     |            csi_txd2.P            |     GPIOR_P_07     |     Output    |              |      1.2 V       | 3B_4A |             |             User IO             |
+|     G9     |             --VCC--              |     VCCIO3B_4A     |     Power     |              |      1.2 V       | 3B_4A |             |           VCCIO Power           |
+|    G10     |     --CDI29-- / csi2_rxd3.N      |  GPIOR_N_04_CDI29  |     Input     |              |      1.2 V       | 3B_4A |             |             User IO             |
+|     H1     |      --CDI1-- / spi.MISO.N       |  GPIOL_N_03_CDI1   | Bidirectional |              |      1.8 V       | 1A_4B |             |      User IO/Configuration      |
+|     H2     |      --CDI0-- / spi.MOSI.P       |  GPIOL_P_03_CDI0   | Bidirectional |              |      1.8 V       | 1A_4B |             |      User IO/Configuration      |
+|     H3     |            --CDONE--             |       CDONE        | Bidirectional |              |      1.8 V       | 1A_4B |             |          Configuration          |
+|     H4     |            --UNUSED--            |     REF_RES_1A     |     Input     |              |      1.8 V       | 1A_4B |             |                                 |
+|     H5     |     --CDI22-- / csi2_rxd1.N      |  GPIOR_N_00_CDI22  |     Input     |              |      1.2 V       | 3B_4A |             |        User IO/PLL_CLKIN        |
+|     H6     |     --CDI26-- / csi2_rxd0.P      |  GPIOR_P_03_CDI26  |     Input     |              |      1.2 V       | 3B_4A |             |             User IO             |
+|     H7     |             --VCC--              |        VCC         |     Power     |              |                  |       |             |         0.95 V VCC Power        |
+|     H8     |      --CDI31-- / csi_txd3.N      |  GPIOR_N_05_CDI31  |     Output    |              |      1.2 V       | 3B_4A |             |             User IO             |
+|     H9     |      --CDI30-- / csi_txd3.P      |  GPIOR_P_05_CDI30  |     Output    |              |      1.2 V       | 3B_4A |             |           User IO/VREF          |
+|    H10     |     --CDI28-- / csi2_rxd3.P      |  GPIOR_P_04_CDI28  |     Input     |              |      1.2 V       | 3B_4A |             |             User IO             |
+|     J1     |      --SSL_N-- / spi.CS_N.P      |  GPIOL_P_01_SSL_N  | Bidirectional |              |      1.8 V       | 1A_4B |             |      User IO/Configuration      |
+|     J2     |       --CCK-- / spi.SCLK.N       |   GPIOL_N_01_CCK   | Bidirectional |              |      1.8 V       | 1A_4B |             |      User IO/Configuration      |
+|     J3     |             --VCC--              |     VCCIO33_BL     |     Power     |              |      1.8 V       |   BL  |             |           VCCIO Power           |
+|     J4     |             --TDO--              |        TDO         |     Output    |              |      1.8 V       |   BL  |             |          Configuration          |
+|     J5     |           csi2_rxd1.P            | GPIOR_P_00_PLLIN0  |     Input     |              |      1.2 V       | 3B_4A |             |        User IO/PLL_CLKIN        |
+|     J6     |     --CDI27-- / csi2_rxd0.N      |  GPIOR_N_03_CDI27  |     Input     |              |      1.2 V       | 3B_4A |             |             User IO             |
+|     J7     |      --CDI25-- / csi2_rxc.N      |  GPIOR_N_02_CDI25  |     Input     |              |      1.2 V       | 3B_4A |             |             User IO             |
+|     J8     |      --CDI24-- / csi2_rxc.P      |  GPIOR_P_02_CDI24  |     Input     |              |      1.2 V       | 3B_4A |             |             User IO             |
+|     J9     |             --GND--              |        GND         |     Power     |              |                  |       |             |              Ground             |
+|    J10     |     --CDI23-- / csi2_rxd2.N      |  GPIOR_N_01_CDI23  |     Input     |              |      1.2 V       | 3B_4A |             |        User IO/PLL_EXTFB        |
+|     K1     |           --CRESET_N--           |      CRESET_N      |     Input     |              |      1.8 V       | 1A_4B |             |          Configuration          |
+|     K2     |             --GND--              |        GND         |     Power     |              |                  |       |             |              Ground             |
+|     K3     |             --TCK--              |        TCK         |     Input     |              |      1.8 V       |   BL  |             |          Configuration          |
+|     K4     |             --TMS--              |        TMS         |     Input     |              |      1.8 V       |   BL  |             |          Configuration          |
+|     K5     |             --TDI--              |        TDI         |     Input     |              |      1.8 V       |   BL  |             |          Configuration          |
+|     K6     |             --GND--              |        GND         |     Power     |              |                  |       |             |              Ground             |
+|     K7     |             --VCC--              |      VCCA_BR       |     Power     |              |                  |       |             |         0.95 V PLL Power        |
+|     K8     |            --UNUSED--            |     REF_RES_4A     |     Input     |              |      1.2 V       | 3B_4A |             |                                 |
+|     K9     |            --UNUSED--            |     REF_RES_3B     |     Input     |              |      1.2 V       | 3B_4A |             |                                 |
+|    K10     |           csi2_rxd2.P            |  GPIOR_P_01_EXTFB  |     Input     |              |      1.2 V       | 3B_4A |             |        User IO/PLL_EXTFB        |
++------------+----------------------------------+--------------------+---------------+--------------+------------------+-------+-------------+---------------------------------+
